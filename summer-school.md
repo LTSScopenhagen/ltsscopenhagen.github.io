@@ -9,6 +9,20 @@ permalink: /summer-school/
     Four days of lectures and exercise/discussion sessions. Speaker details will be added once confirmed.
   </p>
 
+  <div class="card" style="margin-top: 12px;">
+    <p class="muted">
+      This PhD school provides a comprehensive introduction to the theoretical foundations of modern machine learning (ML),
+      also emphasizing trustworthy ML—including privacy and robustness.
+    </p>
+    <p class="muted">Topics to be covered include:</p>
+    <ul class="muted">
+      <li>Generalization in machine learning</li>
+      <li>Optimization theory for ML</li>
+      <li>Online and reinforcement learning</li>
+      <li>Responsible ML — privacy, robustness, and related topics</li>
+    </ul>
+  </div>
+
   {% assign school_days = site.data.schedule.days | where_exp: "d", "d.track contains 'Summer School'" %}
   {% for day in school_days %}
     <div class="schedule-day" style="margin-top: 12px;">
@@ -29,4 +43,3 @@ permalink: /summer-school/
     </div>
   {% endfor %}
 </section>
-
