@@ -5,9 +5,19 @@ location: "Copenhagen, Denmark"
 summer_school:
   dates: "June 22–25, 2026 (Mon–Thu)"
   days: 4
+  venue_name: "August Krogh Building"
+  venue_room: "Auditorium 1 (Aud. 01)"
+  venue_address: "Universitetsparken 13, 2100 Copenhagen Ø"
+  venue_lat: 55.7013610
+  venue_lng: 12.5585230
 workshop:
   dates: "June 26–27, 2026 (Fri–Sat)"
   days: 2
+  venue_name: "H.C. Ørsted Institute (HCØ)"
+  venue_room: "Auditorium 1 (Aud. 01)"
+  venue_address: "Universitetsparken 5, 2100 Copenhagen Ø"
+  venue_lat: 55.7013160
+  venue_lng: 12.5609150
 
 # Organizers live in `_data/organizers.yml`
 

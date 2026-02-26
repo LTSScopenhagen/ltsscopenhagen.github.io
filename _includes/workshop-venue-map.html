@@ -1,0 +1,27 @@
+<section>
+  <h2>Venue Map</h2>
+  <div class="location-layout">
+    <div class="card">
+      <div
+        class="venue-map"
+        data-workshop-name="Workshop: {{ site.data.event.workshop.venue_name }}"
+        data-workshop-address="{{ site.data.event.workshop.venue_address }}, {{ site.data.event.workshop.venue_room }}"
+        data-workshop-lat="{{ site.data.event.workshop.venue_lat }}"
+        data-workshop-lng="{{ site.data.event.workshop.venue_lng }}"
+      ></div>
+    </div>
+    <div class="location-details">
+      <div class="card">
+        <div class="location-list">
+          <div class="location-item">
+            <p class="location-label"><span class="location-dot is-workshop"></span>Workshop</p>
+            <p class="location-name">{{ site.data.event.workshop.venue_name }}</p>
+            <p class="location-meta">{{ site.data.event.workshop.venue_address }}</p>
+            <p class="location-meta">{{ site.data.event.workshop.venue_room }}</p>
+          </div>
+        </div>
+        <p class="tiny muted">Map data: OpenStreetMap contributors.</p>
+      </div>
+    </div>
+  </div>
+</section>

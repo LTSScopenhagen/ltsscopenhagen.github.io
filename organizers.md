@@ -6,7 +6,7 @@ permalink: /organizers/
 <section>
   <h1>Organizers</h1>
   <p class="muted">
-    For questions, see the contact section on the home page.
+    For questions, see the Registration page.
   </p>
 
   <div class="people-grid" style="margin-top: 12px;">

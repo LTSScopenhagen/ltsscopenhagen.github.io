@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-labelledby="title desc">
+  <title id="title">Invited Speaker Placeholder, Woman</title>
+  <desc id="desc">Stylized sketch portrait of a woman in front pose.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f2f0f6" />
+      <stop offset="100%" stop-color="#dde2ef" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="480" fill="url(#bg)" />
+  <ellipse cx="240" cy="225" rx="102" ry="116" fill="#f8ddcc" />
+  <path d="M138 213c0-86 54-138 104-138 67 0 126 57 126 148-23-33-50-43-79-43-34 0-66 11-106 33-22 12-31 17-45 0z" fill="#403244" />
+  <path d="M149 322c24 42 52 66 91 66 36 0 71-20 96-60 12 18 20 39 26 70H117c5-30 16-56 32-76z" fill="#6a5f97" />
+  <circle cx="206" cy="232" r="7" fill="#2f2d31" />
+  <circle cx="278" cy="232" r="7" fill="#2f2d31" />
+  <path d="M205 284c11 10 22 14 35 14 14 0 25-4 35-14" fill="none" stroke="#995f5e" stroke-width="5" stroke-linecap="round" />
+  <path d="M188 212c10-8 21-12 34-12M260 200c13 0 24 4 34 12" fill="none" stroke="#483a4e" stroke-width="5" stroke-linecap="round" />
+  <path d="M167 332c19 13 44 21 73 21 28 0 53-7 73-21" fill="none" stroke="#51467f" stroke-width="6" stroke-linecap="round" />
+</svg>

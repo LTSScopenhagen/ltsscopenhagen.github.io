@@ -1,0 +1,27 @@
+<section>
+  <h2>Venue Map</h2>
+  <div class="location-layout">
+    <div class="card">
+      <div
+        class="venue-map"
+        data-summer-name="Summer School: {{ site.data.event.summer_school.venue_name }}"
+        data-summer-address="{{ site.data.event.summer_school.venue_address }}, {{ site.data.event.summer_school.venue_room }}"
+        data-summer-lat="{{ site.data.event.summer_school.venue_lat }}"
+        data-summer-lng="{{ site.data.event.summer_school.venue_lng }}"
+      ></div>
+    </div>
+    <div class="location-details">
+      <div class="card">
+        <div class="location-list">
+          <div class="location-item">
+            <p class="location-label"><span class="location-dot is-summer"></span>Summer School</p>
+            <p class="location-name">{{ site.data.event.summer_school.venue_name }}</p>
+            <p class="location-meta">{{ site.data.event.summer_school.venue_address }}</p>
+            <p class="location-meta">{{ site.data.event.summer_school.venue_room }}</p>
+          </div>
+        </div>
+        <p class="tiny muted">Map data: OpenStreetMap contributors.</p>
+      </div>
+    </div>
+  </div>
+</section>

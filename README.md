@@ -2,6 +2,10 @@
 
 Static website for the **Learning Theory Summer School & Workshop** in Copenhagen, **June 22–27, 2026**.
 
+The summer school (June 22–25) is aimed at PhD students and early-career researchers, with a focused introduction to modern learning theory and trustworthy machine learning. Topics include generalization, optimization for ML, online and reinforcement learning, and responsible ML themes such as privacy and robustness.
+
+The workshop (June 26–27) complements the school with invited and contributed talks, a poster session, and a social event, creating space for both in-depth technical discussion and new collaborations.
+
 ## Edit content
 
 Most content lives in:

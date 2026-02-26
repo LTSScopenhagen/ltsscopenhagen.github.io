@@ -1,21 +1,18 @@
 ---
-title: "Summer School"
-permalink: /summer-school/
+title: "Summer School — Day 3"
+permalink: /summer-school/day-3/
 map_enabled: true
 ---
 
 <section>
-  <h1>Summer School</h1>
-  <p class="muted">
-    <!-- Four days of lectures and exercise/discussion sessions. -->
-  </p>
+  <h1>Summer School — Day 3</h1>
   <p class="muted">
     Venue: <strong>{{ site.data.event.summer_school.venue_name }}</strong>, {{ site.data.event.summer_school.venue_room }}, {{ site.data.event.summer_school.venue_address }}.
   </p>
 
-  {% include summer-school-tabs.html active="day1" %}
+  {% include summer-school-tabs.html active="day3" %}
 
-  {% assign day = site.data.schedule.days | where: "date", "2026-06-22" | first %}
+  {% assign day = site.data.schedule.days | where: "date", "2026-06-24" | first %}
   <div class="schedule-day" style="margin-top: 12px;">
     <div class="schedule-head">
       <div><strong>{{ day.label }}</strong></div>

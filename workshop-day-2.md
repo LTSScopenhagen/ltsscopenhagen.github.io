@@ -1,6 +1,7 @@
 ---
 title: "Workshop — Day 2"
 permalink: /workshop/day-2/
+map_enabled: true
 ---
 
 <section>
@@ -30,3 +31,4 @@ permalink: /workshop/day-2/
   </div>
 </section>
 
+{% include workshop-venue-map.html %}

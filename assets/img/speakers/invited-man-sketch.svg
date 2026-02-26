@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-labelledby="title desc">
+  <title id="title">Invited Speaker Placeholder, Man</title>
+  <desc id="desc">Stylized sketch portrait of a man in profile-like front pose.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f1f5f3" />
+      <stop offset="100%" stop-color="#d7e5df" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="480" fill="url(#bg)" />
+  <circle cx="240" cy="220" r="108" fill="#f6ddc9" />
+  <path d="M136 183c21-65 70-94 120-94 47 0 94 24 112 88-20-9-36-14-58-14-25 0-41 7-64 15-32 11-62 20-110 5z" fill="#2f3238" />
+  <ellipse cx="240" cy="360" rx="130" ry="94" fill="#4b6f81" />
+  <path d="M182 352c18 11 35 16 58 16 24 0 43-5 60-16 7 18 12 35 12 55H170c0-20 5-37 12-55z" fill="#253947" />
+  <circle cx="204" cy="226" r="7" fill="#2c2c2c" />
+  <circle cx="278" cy="226" r="7" fill="#2c2c2c" />
+  <path d="M206 279c9 9 20 12 34 12 14 0 25-3 34-12" fill="none" stroke="#8a5247" stroke-width="5" stroke-linecap="round" />
+  <path d="M187 206c11-8 23-12 37-12M258 194c14 0 26 4 37 12" fill="none" stroke="#3c3f43" stroke-width="5" stroke-linecap="round" />
+</svg>
