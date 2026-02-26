@@ -7,7 +7,8 @@ Static website for the **Learning Theory Summer School & Workshop** in Copenhage
 Most content lives in:
 
 - `index.md` (main page copy)
-- `_data/event.yml` (title, dates, organizers, contact)
+- `_data/event.yml` (title, dates, contact)
+- `_data/organizers.yml` (organizer list + photos/credits)
 - `_data/schedule.yml` (programme/schedule)
 
 ## Run locally
@@ -24,4 +25,3 @@ Then open the printed local URL (usually `http://127.0.0.1:4000`).
 This repo is a standard Jekyll site (supported by GitHub Pages).
 
 If you publish it as a *project* site (not `username.github.io`), set `baseurl` in `_config.yml` to the repo name (e.g. `/ltss`).
-

@@ -9,13 +9,8 @@ workshop:
   dates: "June 26–27, 2026 (Fri–Sat)"
   days: 2
 
-organizers:
-  - Amartya Sanyal
-  - Yevgeny Seldin
-  - Nirupam Gupta
-  - Sadegh Talebi
+# Organizers live in `_data/organizers.yml`
 
 # Update when available:
 contact_email: "TBA"
 registration_url: "TBA"
-

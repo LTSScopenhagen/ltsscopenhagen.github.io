@@ -19,8 +19,8 @@ title: "LTSS Copenhagen 2026"
         <div class="pill"><span class="muted">Workshop:</span> {{ site.data.event.workshop.dates }}</div>
       </div>
       <div class="actions">
-        <a class="btn primary" href="#registration">Registration</a>
-        <a class="btn" href="#programme">Programme</a>
+        <a class="btn primary" href="{{ '/workshop/day-1/' | relative_url }}">Workshop schedule</a>
+        <a class="btn" href="{{ '/summer-school/' | relative_url }}">Summer school</a>
       </div>
       <p class="tiny muted hero-note">Rotating generated illustration of Copenhagen (no tracking, no cookies).</p>
     </div>
@@ -47,9 +47,9 @@ title: "LTSS Copenhagen 2026"
     </div>
     <div class="card">
       <p><strong>Organizers</strong></p>
-      <p class="muted">{{ site.data.event.organizers | join: ", " }}</p>
+      <p class="muted">{{ site.data.organizers | map: "name" | join: ", " }}</p>
       <p class="tiny muted">
-        This site is designed to be easy to update: edit `index.md`, `_data/event.yml`, and `_data/schedule.yml`.
+        This site is designed to be easy to update: edit `index.md`, `_data/event.yml`, `_data/organizers.yml`, and `_data/schedule.yml`.
       </p>
     </div>
   </div>
@@ -57,26 +57,21 @@ title: "LTSS Copenhagen 2026"
 
 <section id="programme">
   <h2>Programme</h2>
-  <p class="muted">Schedule below is a placeholder and will be updated.</p>
-
-  {% for day in site.data.schedule.days %}
-    <div class="schedule-day" style="margin-top: 12px;">
-      <div class="schedule-head">
-        <div><strong>{{ day.label }}</strong></div>
-        <div class="track">{{ day.track }}</div>
-      </div>
-      <table class="schedule-table" aria-label="Schedule for {{ day.label }}">
-        <tbody>
-          {% for item in day.items %}
-            <tr>
-              <td class="time">{{ item.time }}</td>
-              <td>{{ item.title }}</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+  <p class="muted">
+    We maintain the schedules on separate pages (linked below). Timings are a placeholder until speakers are finalized.
+  </p>
+  <div class="grid two" style="margin-top: 12px;">
+    <div class="card">
+      <p><strong>Summer School (Jun 22–25)</strong></p>
+      <p class="muted tiny">Lectures + exercises (4 days).</p>
+      <a class="btn" href="{{ '/summer-school/' | relative_url }}">View summer school schedule</a>
     </div>
-  {% endfor %}
+    <div class="card">
+      <p><strong>Workshop (Jun 26–27)</strong></p>
+      <p class="muted tiny">Invited + contributed talks, posters, and social.</p>
+      <a class="btn primary" href="{{ '/workshop/' | relative_url }}">View workshop schedule</a>
+    </div>
+  </div>
 </section>
 
 <section id="registration">
@@ -106,11 +101,24 @@ title: "LTSS Copenhagen 2026"
 <section id="organizers">
   <h2>Organizers</h2>
   <div class="card">
-    <ul>
-      {% for o in site.data.event.organizers %}
-        <li>{{ o }}</li>
+    <div class="people-grid">
+      {% for o in site.data.organizers %}
+        <a class="person-card" href="{{ '/organizers/' | relative_url }}" aria-label="View organizers">
+          <div class="avatar">
+            <img src="{{ o.photo | relative_url }}" alt="Photo of {{ o.name }}" loading="lazy" width="120" height="120" />
+          </div>
+          <div class="person-body">
+            <div class="person-name">{{ o.name }}</div>
+            {% if o.affiliation %}
+              <div class="person-meta">{{ o.affiliation }}</div>
+            {% endif %}
+          </div>
+        </a>
       {% endfor %}
-    </ul>
+    </div>
+    <p class="tiny muted" style="margin-top: 10px;">
+      Full list (with links and photo credits): <a href="{{ '/organizers/' | relative_url }}">Organizers page</a>.
+    </p>
   </div>
 </section>
 
