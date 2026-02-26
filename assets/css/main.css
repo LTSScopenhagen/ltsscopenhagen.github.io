@@ -260,9 +260,9 @@ a.person-card:hover{
   border-color: color-mix(in srgb, var(--line) 60%, var(--fg));
 }
 .avatar{
-  width: 64px;
-  height: 64px;
-  border-radius: 14px;
+  width: clamp(96px, 11vw, 150px);
+  height: clamp(96px, 11vw, 150px);
+  border-radius: 16px;
   overflow: hidden;
   border: 1px solid var(--line);
   flex: 0 0 auto;

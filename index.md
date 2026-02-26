@@ -10,7 +10,7 @@ title: "LTSS Copenhagen 2026"
     <div class="hero-copy">
       <h1>Learning Theory Summer School & Workshop</h1>
       <p class="lead muted">
-        Four days of lectures and exercises, followed by a two-day research workshop.
+        PhD school + workshop in Copenhagen.
       </p>
       <div class="hero-meta">
         <div class="pill"><strong>{{ site.data.event.dates_full }}</strong></div>
@@ -36,19 +36,13 @@ title: "LTSS Copenhagen 2026"
 <section id="about">
   <h2>About</h2>
   <div class="card">
-    <p class="muted">
-      The event comprises a <strong>PhD school</strong> (June 22–25) and a <strong>workshop</strong> (June 26–27).
-    </p>
+    <p class="muted"><strong>PhD school:</strong> June 22–25. <strong>Workshop:</strong> June 26–27.</p>
     <div class="grid two" style="margin-top: 12px;">
       <div>
         <p><strong>PhD school (June 22–25)</strong></p>
         <p class="muted">
-          This PhD school provides a comprehensive introduction to the theoretical foundations of modern machine learning (ML),
-          also emphasizing trustworthy ML—including privacy and robustness. Over 4 intensive days, participants will study core
-          learning-theoretic principles, optimization and sequential decision-making (online and reinforcement learning), and
-          mathematical tools for designing reliable ML systems operating under uncertainty, constraints, and adversarial conditions.
+          A focused introduction to modern learning theory and trustworthy ML (privacy, robustness).
         </p>
-        <p class="muted">Topics to be covered:</p>
         <ul class="muted">
           <li>Generalization in machine learning</li>
           <li>Optimization theory for ML</li>
@@ -59,8 +53,7 @@ title: "LTSS Copenhagen 2026"
       <div>
         <p><strong>Workshop (June 26–27)</strong></p>
         <p class="muted">
-          Two-day research workshop with <strong>8 invited talks</strong> (45 min incl. Q&amp;A) and
-          <strong>8 contributed talks</strong> (30 min incl. Q&amp;A), two coffee breaks and one lunch each day.
+          <strong>8 invited talks</strong> (45 min incl. Q&amp;A) and <strong>8 contributed talks</strong> (30 min incl. Q&amp;A).
         </p>
         <ul class="muted">
           <li>Poster session on Day 1</li>
@@ -73,19 +66,14 @@ title: "LTSS Copenhagen 2026"
 
 <section id="programme">
   <h2>Programme</h2>
-  <p class="muted">
-    We maintain the schedules on separate pages (linked below). Timings are a placeholder until speakers are finalized.
-  </p>
   <div class="grid two" style="margin-top: 12px;">
     <div class="card">
       <p><strong>Summer School (Jun 22–25)</strong></p>
-      <p class="muted tiny">Lectures + exercises (4 days).</p>
-      <a class="btn" href="{{ '/summer-school/' | relative_url }}">View summer school schedule</a>
+      <a class="btn" href="{{ '/summer-school/' | relative_url }}">Schedule</a>
     </div>
     <div class="card">
       <p><strong>Workshop (Jun 26–27)</strong></p>
-      <p class="muted tiny">Invited + contributed talks, posters, and social.</p>
-      <a class="btn primary" href="{{ '/workshop/day-1/' | relative_url }}">View workshop schedule</a>
+      <a class="btn primary" href="{{ '/workshop/day-1/' | relative_url }}">Schedule</a>
     </div>
   </div>
 </section>
@@ -121,7 +109,7 @@ title: "LTSS Copenhagen 2026"
       {% for o in site.data.organizers %}
         <a class="person-card" href="{{ '/organizers/' | relative_url }}" aria-label="View organizers">
           <div class="avatar">
-            <img src="{{ o.photo | relative_url }}" alt="Photo of {{ o.name }}" loading="lazy" width="120" height="120" />
+            <img src="{{ o.photo | relative_url }}" alt="Photo of {{ o.name }}" loading="lazy" width="180" height="180" />
           </div>
           <div class="person-body">
             <div class="person-name">{{ o.name }}</div>
@@ -133,7 +121,7 @@ title: "LTSS Copenhagen 2026"
       {% endfor %}
     </div>
     <p class="tiny muted" style="margin-top: 10px;">
-      Full list (with links and photo credits): <a href="{{ '/organizers/' | relative_url }}">Organizers page</a>.
+      <a href="{{ '/organizers/' | relative_url }}">Organizers page</a>.
     </p>
   </div>
 </section>
@@ -142,6 +130,5 @@ title: "LTSS Copenhagen 2026"
   <h2>Contact</h2>
   <div class="card">
     <p class="muted">Email: <strong>{{ site.data.event.contact_email }}</strong></p>
-    <p class="muted tiny">If you want a submissions page, speaker list, or separate workshop CFP page, we can add it.</p>
   </div>
 </section>

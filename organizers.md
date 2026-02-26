@@ -6,14 +6,14 @@ permalink: /organizers/
 <section>
   <h1>Organizers</h1>
   <p class="muted">
-    Contact details will be posted once available. For now, please use the contact section on the home page.
+    For questions, see the contact section on the home page.
   </p>
 
   <div class="people-grid" style="margin-top: 12px;">
     {% for o in site.data.organizers %}
       <div class="person-card">
         <div class="avatar">
-          <img src="{{ o.photo | relative_url }}" alt="Photo of {{ o.name }}" loading="lazy" width="160" height="160" />
+          <img src="{{ o.photo | relative_url }}" alt="Photo of {{ o.name }}" loading="lazy" width="220" height="220" />
         </div>
         <div class="person-body">
           <div class="person-name">
@@ -32,4 +32,3 @@ permalink: /organizers/
     {% endfor %}
   </div>
 </section>
-

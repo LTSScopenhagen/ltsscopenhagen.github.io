@@ -4,17 +4,15 @@ permalink: /summer-school/
 ---
 
 <section>
-  <h1>Summer School schedule</h1>
+  <h1>Summer School</h1>
   <p class="muted">
-    Four days of lectures and exercise/discussion sessions. Speaker details will be added once confirmed.
+    Four days of lectures and exercise/discussion sessions.
   </p>
 
   <div class="card" style="margin-top: 12px;">
     <p class="muted">
-      This PhD school provides a comprehensive introduction to the theoretical foundations of modern machine learning (ML),
-      also emphasizing trustworthy ML—including privacy and robustness.
+      A focused introduction to modern learning theory and trustworthy ML (privacy, robustness).
     </p>
-    <p class="muted">Topics to be covered include:</p>
     <ul class="muted">
       <li>Generalization in machine learning</li>
       <li>Optimization theory for ML</li>
