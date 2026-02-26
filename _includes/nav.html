@@ -1,0 +1,12 @@
+<div class="container nav-row">
+  <a class="brand" href="{{ '/' | relative_url }}">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-text">{{ site.data.event.short_title }}</span>
+  </a>
+  <nav class="nav" aria-label="Primary">
+    {% for item in site.data.nav %}
+      <a class="nav-link" href="{{ item.href | relative_url }}">{{ item.label }}</a>
+    {% endfor %}
+  </nav>
+</div>
+

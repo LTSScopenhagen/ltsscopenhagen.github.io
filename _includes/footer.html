@@ -1,0 +1,15 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-title">{{ site.data.event.short_title }}</div>
+        <div class="muted">{{ site.data.event.location }}</div>
+      </div>
+      <div class="muted">
+        <div>Organizers: {{ site.data.event.organizers | join: ", " }}</div>
+        <div>Last build: {{ site.time | date: "%Y-%m-%d" }}</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
