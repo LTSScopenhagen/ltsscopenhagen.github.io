@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-label="Generated illustration of Copenhagen at night">
+  <defs>
+    <linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c1211"/>
+      <stop offset="1" stop-color="#0e1a16"/>
+    </linearGradient>
+    <linearGradient id="water3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6dd3b2" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#8db8ff" stop-opacity="0.12"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="820" rx="48" fill="url(#sky3)"/>
+
+  <!-- stars -->
+  <g fill="#f1f4f2" opacity="0.6">
+    <circle cx="190" cy="150" r="2"/>
+    <circle cx="260" cy="110" r="2"/>
+    <circle cx="340" cy="180" r="1.5"/>
+    <circle cx="460" cy="130" r="2"/>
+    <circle cx="620" cy="170" r="1.5"/>
+    <circle cx="740" cy="120" r="2"/>
+    <circle cx="820" cy="170" r="1.5"/>
+    <circle cx="930" cy="140" r="2"/>
+  </g>
+
+  <circle cx="980" cy="170" r="150" fill="#8db8ff" opacity="0.10" filter="url(#glow)"/>
+  <circle cx="900" cy="240" r="170" fill="#6dd3b2" opacity="0.10" filter="url(#glow)"/>
+
+  <path d="M120 505 H1080" stroke="#27312d" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- silhouette -->
+  <g fill="none" stroke="#d7e1db" stroke-opacity="0.35" stroke-width="2" stroke-linejoin="round">
+    <path d="M220 505 V365 h90 v140" />
+    <path d="M315 505 V332 h80 v173" />
+    <path d="M400 505 V350 h98 v155" />
+    <path d="M505 505 V315 h86 v190" />
+    <path d="M595 505 V345 h110 v160" />
+    <path d="M710 505 V330 h84 v175" />
+    <path d="M798 505 V360 h90 v145" />
+  </g>
+
+  <!-- windows -->
+  <g fill="#f1f4f2" opacity="0.28">
+    <rect x="244" y="402" width="14" height="12" rx="2"/>
+    <rect x="268" y="402" width="14" height="12" rx="2"/>
+    <rect x="338" y="372" width="14" height="12" rx="2"/>
+    <rect x="362" y="372" width="14" height="12" rx="2"/>
+    <rect x="428" y="392" width="14" height="12" rx="2"/>
+    <rect x="452" y="392" width="14" height="12" rx="2"/>
+    <rect x="532" y="360" width="14" height="12" rx="2"/>
+    <rect x="556" y="360" width="14" height="12" rx="2"/>
+    <rect x="628" y="392" width="14" height="12" rx="2"/>
+    <rect x="652" y="392" width="14" height="12" rx="2"/>
+  </g>
+
+  <path d="M120 505 C260 545 380 545 520 505 C660 465 780 465 920 505 C1040 540 1100 540 1080 528 V820 H120 Z" fill="url(#water3)"/>
+  <g fill="none" stroke="#8db8ff" stroke-opacity="0.16" stroke-width="3" stroke-linecap="round">
+    <path d="M170 600 C300 640 420 640 550 600" />
+    <path d="M600 655 C720 690 850 690 970 655" />
+    <path d="M240 720 C380 755 520 755 660 720" />
+  </g>
+</svg>
+

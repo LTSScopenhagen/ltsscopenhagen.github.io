@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-label="Generated illustration of Copenhagen at dusk">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f5f2"/>
+      <stop offset="1" stop-color="#efe7df"/>
+    </linearGradient>
+    <linearGradient id="water2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0a2a4a" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#0b5d4a" stop-opacity="0.14"/>
+    </linearGradient>
+    <filter id="soft2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="820" rx="48" fill="url(#sky2)"/>
+
+  <circle cx="910" cy="190" r="165" fill="#0a2a4a" opacity="0.10" filter="url(#soft2)"/>
+  <circle cx="1020" cy="250" r="160" fill="#0b5d4a" opacity="0.09" filter="url(#soft2)"/>
+
+  <path d="M120 500 H1080" stroke="#d7cdc4" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- facades with subtle "paint" blocks -->
+  <g opacity="0.75">
+    <rect x="222" y="368" width="86" height="130" fill="#e7d7c6"/>
+    <rect x="317" y="336" width="74" height="162" fill="#dbe4df"/>
+    <rect x="402" y="354" width="94" height="144" fill="#f2e1c7"/>
+    <rect x="507" y="325" width="82" height="173" fill="#d8d2e6"/>
+    <rect x="597" y="350" width="106" height="148" fill="#e2eadf"/>
+    <rect x="712" y="338" width="80" height="160" fill="#e9d6dd"/>
+    <rect x="800" y="366" width="88" height="132" fill="#e1e8f0"/>
+  </g>
+
+  <g fill="none" stroke="#2a2d2c" stroke-opacity="0.55" stroke-width="2" stroke-linejoin="round">
+    <path d="M220 500 V368 h90 v132" />
+    <path d="M315 500 V336 h80 v164" />
+    <path d="M400 500 V354 h98 v146" />
+    <path d="M505 500 V325 h86 v175" />
+    <path d="M595 500 V350 h110 v150" />
+    <path d="M710 500 V338 h84 v162" />
+    <path d="M798 500 V366 h90 v134" />
+  </g>
+
+  <g stroke="#2a2d2c" stroke-opacity="0.50" stroke-width="2" stroke-linecap="round">
+    <path d="M355 336 L355 292" />
+    <path d="M548 325 L548 275" />
+    <path d="M548 275 L536 290" />
+    <path d="M548 275 L560 290" />
+  </g>
+
+  <path d="M120 500 C260 540 380 540 520 500 C660 460 780 460 920 500 C1040 534 1100 534 1080 520 V820 H120 Z" fill="url(#water2)"/>
+  <g fill="none" stroke="#0a2a4a" stroke-opacity="0.18" stroke-width="3" stroke-linecap="round">
+    <path d="M170 590 C290 624 420 624 540 590" />
+    <path d="M590 640 C710 672 840 672 960 640" />
+    <path d="M220 710 C360 745 510 745 650 710" />
+  </g>
+</svg>
+

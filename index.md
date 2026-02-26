@@ -2,13 +2,32 @@
 title: "LTSS Copenhagen 2026"
 ---
 
-<div class="hero">
-  <h1>Learning Theory Summer School & Workshop</h1>
-  <div class="hero-meta">
-    <div class="pill"><strong>{{ site.data.event.dates_full }}</strong></div>
-    <div class="pill">{{ site.data.event.location }}</div>
-    <div class="pill"><span class="muted">Summer school:</span> {{ site.data.event.summer_school.dates }}</div>
-    <div class="pill"><span class="muted">Workshop:</span> {{ site.data.event.workshop.dates }}</div>
+<div
+  class="hero"
+  data-hero-images="{{ '/assets/img/cph-01.svg' | relative_url }}, {{ '/assets/img/cph-02.svg' | relative_url }}, {{ '/assets/img/cph-03.svg' | relative_url }}"
+>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <h1>Learning Theory Summer School & Workshop</h1>
+      <p class="lead muted">
+        Four days of lectures and exercises, followed by a two-day research workshop.
+      </p>
+      <div class="hero-meta">
+        <div class="pill"><strong>{{ site.data.event.dates_full }}</strong></div>
+        <div class="pill">{{ site.data.event.location }}</div>
+        <div class="pill"><span class="muted">Summer school:</span> {{ site.data.event.summer_school.dates }}</div>
+        <div class="pill"><span class="muted">Workshop:</span> {{ site.data.event.workshop.dates }}</div>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="#registration">Registration</a>
+        <a class="btn" href="#programme">Programme</a>
+      </div>
+      <p class="tiny muted hero-note">Rotating generated illustration of Copenhagen (no tracking, no cookies).</p>
+    </div>
+    <div class="hero-media" aria-hidden="true">
+      <img class="hero-img is-a is-visible" src="{{ '/assets/img/cph-01.svg' | relative_url }}" alt="" />
+      <img class="hero-img is-b" src="{{ '/assets/img/cph-02.svg' | relative_url }}" alt="" />
+    </div>
   </div>
 </div>
 
@@ -20,14 +39,18 @@ title: "LTSS Copenhagen 2026"
         A <strong>{{ site.data.event.summer_school.days }}-day</strong> summer school on learning theory, followed by a
         <strong>{{ site.data.event.workshop.days }}-day</strong> research workshop.
       </p>
-      <p class="muted tiny">
-        This website is intentionally minimal. Most updates are made by editing `index.md`, `_data/event.yml`, and `_data/schedule.yml`.
-      </p>
+      <ul class="muted">
+        <li>Summer school: lectures + exercises</li>
+        <li>Workshop: invited + contributed sessions</li>
+        <li>Location: Copenhagen (details TBA)</li>
+      </ul>
     </div>
     <div class="card">
       <p><strong>Organizers</strong></p>
       <p class="muted">{{ site.data.event.organizers | join: ", " }}</p>
-      <p class="tiny muted">More details (speakers, venue, registration) will be posted here.</p>
+      <p class="tiny muted">
+        This site is designed to be easy to update: edit `index.md`, `_data/event.yml`, and `_data/schedule.yml`.
+      </p>
     </div>
   </div>
 </section>
@@ -98,4 +121,3 @@ title: "LTSS Copenhagen 2026"
     <p class="muted tiny">If you want a submissions page, speaker list, or separate workshop CFP page, we can add it.</p>
   </div>
 </section>
-
