@@ -250,6 +250,12 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 1px; text-underl
   display: grid;
   gap: 8px;
 }
+.speaker-photo-link{
+  display: block;
+}
+.speaker-photo-link:hover{
+  text-decoration: none;
+}
 .speaker-tile-photo{
   width: 150px;
   height: 150px;
@@ -428,6 +434,9 @@ a.person-card:hover{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+}
+.avatar a{
   display: block;
 }
 .person-body{

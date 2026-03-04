@@ -58,9 +58,17 @@ map_enabled: true
       <div class="speaker-carousel-list" aria-label="Summer school invited speakers">
         {% for s in summer_invited %}
           <div class="speaker-tile">
-            <div class="speaker-tile-photo">
-              <img src="{{ s.photo | relative_url }}" alt="Portrait of {{ s.name }}" loading="lazy" width="160" height="160" />
-            </div>
+            {% if s.url %}
+              <a href="{{ s.url }}" target="_blank" rel="noopener noreferrer" class="speaker-photo-link" aria-label="Open profile of {{ s.name }}">
+                <div class="speaker-tile-photo">
+                  <img src="{{ s.photo | relative_url }}" alt="Portrait of {{ s.name }}" loading="lazy" width="160" height="160" />
+                </div>
+              </a>
+            {% else %}
+              <div class="speaker-tile-photo">
+                <img src="{{ s.photo | relative_url }}" alt="Portrait of {{ s.name }}" loading="lazy" width="160" height="160" />
+              </div>
+            {% endif %}
             <p class="speaker-tile-name">{{ s.name }}</p>
           </div>
         {% endfor %}
@@ -71,9 +79,17 @@ map_enabled: true
       <div class="speaker-carousel-list" aria-label="Workshop invited speakers">
         {% for s in workshop_invited %}
           <div class="speaker-tile">
-            <div class="speaker-tile-photo">
-              <img src="{{ s.photo | relative_url }}" alt="Portrait of {{ s.name }}" loading="lazy" width="160" height="160" />
-            </div>
+            {% if s.url %}
+              <a href="{{ s.url }}" target="_blank" rel="noopener noreferrer" class="speaker-photo-link" aria-label="Open profile of {{ s.name }}">
+                <div class="speaker-tile-photo">
+                  <img src="{{ s.photo | relative_url }}" alt="Portrait of {{ s.name }}" loading="lazy" width="160" height="160" />
+                </div>
+              </a>
+            {% else %}
+              <div class="speaker-tile-photo">
+                <img src="{{ s.photo | relative_url }}" alt="Portrait of {{ s.name }}" loading="lazy" width="160" height="160" />
+              </div>
+            {% endif %}
             <p class="speaker-tile-name">{{ s.name }}</p>
           </div>
         {% endfor %}
@@ -88,7 +104,9 @@ map_enabled: true
     {% for o in site.data.organizers %}
       <div class="person-card">
         <div class="avatar">
-          <img src="{{ o.photo | relative_url }}" alt="Photo of {{ o.name }}" loading="lazy" width="220" height="220" />
+          <a href="{{ o.url }}" target="_blank" rel="noopener noreferrer" aria-label="Open profile of {{ o.name }}">
+            <img src="{{ o.photo | relative_url }}" alt="Photo of {{ o.name }}" loading="lazy" width="220" height="220" />
+          </a>
         </div>
         <div class="person-body">
           <div class="person-name">
