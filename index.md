@@ -34,7 +34,7 @@ map_enabled: true
 <section>
   <h2>About</h2>
   <div class="card">
-    <p class="muted"><strong>PhD school:</strong> June 22–25. <strong>Workshop:</strong> June 26–27.</p>
+    <p class="muted"></p>
     <p class="muted">
       The summer school (June 22–25) is designed for PhD students, masters students, and early-career researchers who want a strong foundation in modern learning theory and responsible machine learning. Over four days, participants will study core themes such as generalization, optimization for ML, online and reinforcement learning, and responsible ML topics including privacy and robustness with a focus towards modern ML.
     </p>
