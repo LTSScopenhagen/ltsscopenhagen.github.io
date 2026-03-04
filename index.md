@@ -1,5 +1,5 @@
 ---
-title: "LTSS Copenhagen 2026 | Summer School Jun 22-25, Workshop Jun 26-27"
+title: "LTSS Copenhagen 2026"
 map_enabled: true
 ---
 
@@ -10,13 +10,15 @@ map_enabled: true
   <div class="hero-grid">
     <div class="hero-copy">
       <h1>
-        Learning Theory Summer School & Workshop
-        <span class="hero-title-dates">
-          Summer School: {{ site.data.event.summer_school.dates_short }} | Workshop: {{ site.data.event.workshop.dates_short }}
+        <span class="hero-title-main">Learning Theory</span>
+        <span class="hero-title-track">
+          Summer School ({{ site.data.event.summer_school.dates_short }})
+        </span>
+        <span class="hero-title-track">
+          Workshop ({{ site.data.event.workshop.dates_short }})
         </span>
       </h1>
       <div class="hero-meta">
-        <div class="pill"><strong>{{ site.data.event.dates_full }}</strong></div>
         <div class="pill">{{ site.data.event.location }}</div>
       </div>
       <div class="actions">
@@ -34,7 +36,6 @@ map_enabled: true
 <section>
   <h2>About</h2>
   <div class="card">
-    <p class="muted"></p>
     <p class="muted">
       The summer school (June 22–25) is designed for PhD students, masters students, and early-career researchers who want a strong foundation in modern learning theory and responsible machine learning. Over four days, participants will study core themes such as generalization, optimization for ML, online and reinforcement learning, and responsible ML topics including privacy and robustness with a focus towards modern ML.
     </p>
@@ -50,15 +51,15 @@ map_enabled: true
   {% assign workshop_invited = site.data.workshop_speakers %}
   <div class="card speaker-card">
     <p class="muted">
-      Invited speakers will be announced soon. Placeholder lines shown below.
+      More speakers will be announced soon.
     </p>
     <div class="speaker-line">
       <p class="speaker-line-title">Summer School</p>
-      <div class="speaker-carousel-list" aria-label="Summer school invited speaker placeholders">
+      <div class="speaker-carousel-list" aria-label="Summer school invited speakers">
         {% for s in summer_invited %}
           <div class="speaker-tile">
             <div class="speaker-tile-photo">
-              <img src="{{ s.photo | relative_url }}" alt="Placeholder portrait of {{ s.name }}" loading="lazy" width="160" height="160" />
+              <img src="{{ s.photo | relative_url }}" alt="Portrait of {{ s.name }}" loading="lazy" width="160" height="160" />
             </div>
             <p class="speaker-tile-name">{{ s.name }}</p>
           </div>
@@ -67,21 +68,17 @@ map_enabled: true
     </div>
     <div class="speaker-line">
       <p class="speaker-line-title">Workshop</p>
-      <div class="speaker-carousel-list" aria-label="Workshop invited speaker placeholders">
+      <div class="speaker-carousel-list" aria-label="Workshop invited speakers">
         {% for s in workshop_invited %}
           <div class="speaker-tile">
             <div class="speaker-tile-photo">
-              <img src="{{ s.photo | relative_url }}" alt="Placeholder portrait of {{ s.name }}" loading="lazy" width="160" height="160" />
+              <img src="{{ s.photo | relative_url }}" alt="Portrait of {{ s.name }}" loading="lazy" width="160" height="160" />
             </div>
             <p class="speaker-tile-name">{{ s.name }}</p>
           </div>
         {% endfor %}
       </div>
     </div>
-    <p class="tiny muted">
-      Placeholder lists (10 + 10): replace names and photos in
-      <code>_data/summer_school_speakers.yml</code> and <code>_data/workshop_speakers.yml</code>.
-    </p>
   </div>
 </section>
 
