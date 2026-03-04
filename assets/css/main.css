@@ -79,7 +79,7 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 1px; text-underl
 
 .brand{
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   text-decoration: none;
   font-weight: 650;
@@ -91,7 +91,25 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 1px; text-underl
   border-radius: 999px;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
 }
-.brand-text{ white-space: nowrap; }
+.brand-text-wrap{
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.brand-text{
+  white-space: nowrap;
+  line-height: 1.05;
+}
+.brand-dates{
+  font-size: 12px;
+  font-weight: 560;
+  color: var(--muted);
+  line-height: 1.2;
+}
+
+@media (max-width: 920px){
+  .brand-text{ white-space: normal; }
+}
 
 .nav{
   display: flex;
@@ -132,6 +150,13 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 1px; text-underl
   font-size: clamp(30px, 4.4vw, 44px);
   line-height: 1.12;
   letter-spacing: -0.3px;
+}
+.hero-title-dates{
+  display: block;
+  margin-top: 10px;
+  font-size: clamp(18px, 2.2vw, 24px);
+  line-height: 1.25;
+  color: color-mix(in srgb, var(--fg) 88%, var(--accent));
 }
 .hero-note{ margin-top: 10px; }
 .hero-meta{
@@ -208,6 +233,19 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 1px; text-underl
   display: grid;
   gap: 10px;
   justify-items: start;
+}
+.speaker-line{
+  display: grid;
+  gap: 8px;
+  width: 100%;
+}
+.speaker-line-title{
+  margin: 2px 0 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 .speaker-carousel-list{
   display: flex;

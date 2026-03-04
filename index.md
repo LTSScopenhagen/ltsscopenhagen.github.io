@@ -1,5 +1,5 @@
 ---
-title: "LTSS Copenhagen 2026"
+title: "LTSS Copenhagen 2026 | Summer School Jun 22-25, Workshop Jun 26-27"
 map_enabled: true
 ---
 
@@ -9,7 +9,12 @@ map_enabled: true
 >
   <div class="hero-grid">
     <div class="hero-copy">
-      <h1>Learning Theory Summer School & Workshop</h1>
+      <h1>
+        Learning Theory Summer School & Workshop
+        <span class="hero-title-dates">
+          Summer School: {{ site.data.event.summer_school.dates_short }} | Workshop: {{ site.data.event.workshop.dates_short }}
+        </span>
+      </h1>
       <div class="hero-meta">
         <div class="pill"><strong>{{ site.data.event.dates_full }}</strong></div>
         <div class="pill">{{ site.data.event.location }}</div>
@@ -41,23 +46,41 @@ map_enabled: true
 
 <section>
   <h2>Invited Speakers</h2>
-  {% assign invited = site.data.invited_speakers %}
+  {% assign summer_invited = site.data.summer_school_speakers %}
+  {% assign workshop_invited = site.data.workshop_speakers %}
   <div class="card speaker-card">
     <p class="muted">
-      Invited speakers will be announced soon. Placeholder list shown below.
+      Invited speakers will be announced soon. Placeholder lines shown below.
     </p>
-    <div class="speaker-carousel-list" aria-label="Invited speaker placeholders">
-      {% for s in invited %}
-        <div class="speaker-tile">
-          <div class="speaker-tile-photo">
-            <img src="{{ s.photo | relative_url }}" alt="Placeholder portrait of {{ s.name }}" loading="lazy" width="160" height="160" />
+    <div class="speaker-line">
+      <p class="speaker-line-title">Summer School</p>
+      <div class="speaker-carousel-list" aria-label="Summer school invited speaker placeholders">
+        {% for s in summer_invited %}
+          <div class="speaker-tile">
+            <div class="speaker-tile-photo">
+              <img src="{{ s.photo | relative_url }}" alt="Placeholder portrait of {{ s.name }}" loading="lazy" width="160" height="160" />
+            </div>
+            <p class="speaker-tile-name">{{ s.name }}</p>
           </div>
-          <p class="speaker-tile-name">{{ s.name }}</p>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="speaker-line">
+      <p class="speaker-line-title">Workshop</p>
+      <div class="speaker-carousel-list" aria-label="Workshop invited speaker placeholders">
+        {% for s in workshop_invited %}
+          <div class="speaker-tile">
+            <div class="speaker-tile-photo">
+              <img src="{{ s.photo | relative_url }}" alt="Placeholder portrait of {{ s.name }}" loading="lazy" width="160" height="160" />
+            </div>
+            <p class="speaker-tile-name">{{ s.name }}</p>
+          </div>
+        {% endfor %}
+      </div>
     </div>
     <p class="tiny muted">
-      Placeholder list (10): replace names and photos in <code>_data/invited_speakers.yml</code> later.
+      Placeholder lists (10 + 10): replace names and photos in
+      <code>_data/summer_school_speakers.yml</code> and <code>_data/workshop_speakers.yml</code>.
     </p>
   </div>
 </section>

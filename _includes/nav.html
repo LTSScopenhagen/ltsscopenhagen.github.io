@@ -1,7 +1,12 @@
 <div class="container nav-row">
   <a class="brand" href="{{ '/' | relative_url }}">
     <span class="brand-mark" aria-hidden="true"></span>
-    <span class="brand-text">{{ site.data.event.short_title }}</span>
+    <span class="brand-text-wrap">
+      <span class="brand-text">{{ site.data.event.short_title }}</span>
+      <span class="brand-dates">
+        Summer School: {{ site.data.event.summer_school.dates_short }} | Workshop: {{ site.data.event.workshop.dates_short }}
+      </span>
+    </span>
   </a>
   <nav class="nav" aria-label="Primary">
     {% for item in site.data.nav %}
@@ -9,4 +14,3 @@
     {% endfor %}
   </nav>
 </div>
-

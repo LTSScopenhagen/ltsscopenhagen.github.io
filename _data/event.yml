@@ -4,6 +4,7 @@ location: "Copenhagen, Denmark"
 
 summer_school:
   dates: "June 22–25, 2026 (Mon–Thu)"
+  dates_short: "June 22-25, 2026"
   days: 4
   venue_name: "August Krogh Building"
   venue_room: "Auditorium 1 (Aud. 01)"
@@ -12,6 +13,7 @@ summer_school:
   venue_lng: 12.5585230
 workshop:
   dates: "June 26–27, 2026 (Fri–Sat)"
+  dates_short: "June 26-27, 2026"
   days: 2
   venue_name: "H.C. Ørsted Institute (HCØ)"
   venue_room: "Auditorium 1 (Aud. 01)"
