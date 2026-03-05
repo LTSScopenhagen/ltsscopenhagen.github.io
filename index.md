@@ -22,8 +22,8 @@ map_enabled: true
         <div class="pill">{{ site.data.event.location }}</div>
       </div>
       <div class="actions">
-        <a class="btn primary" href="{{ '/workshop/day-1/' | relative_url }}">Workshop schedule</a>
-        <a class="btn" href="{{ '/summer-school/' | relative_url }}">Summer school</a>
+        <a class="btn primary btn-schedule" href="{{ '/summer-school/' | relative_url }}">Summer school schedule</a>
+        <a class="btn" href="{{ '/workshop/day-1/' | relative_url }}">Workshop schedule</a>
       </div>
     </div>
     <div class="hero-media" aria-hidden="true">
@@ -37,10 +37,10 @@ map_enabled: true
   <h2>About</h2>
   <div class="card">
     <p class="muted">
-      The summer school (June 22–25) is designed for PhD students, masters students, and early-career researchers who want a strong foundation in modern learning theory and responsible machine learning. Over four days, participants will study core themes such as generalization, optimization for ML, online and reinforcement learning, and responsible ML topics including privacy and robustness with a focus towards modern ML.
+      The <strong>summer school</strong> (June 22–25) is aimed at PhD students, masters students, early-career researchers, and industry professionals, who want to acquire a strong foundation in modern learning theory and responsible machine learning. Over four days, participants will study core themes, such as generalization, optimization for ML, online and reinforcement learning, and responsible ML topics including privacy and robustness.
     </p>
     <p class="muted">
-      The workshop (June 26–27) brings the broader community together for exchange and discussion through <strong>invited talks</strong> and <strong>contributed talks</strong>, together with a poster session. Together, the school and workshop offer both structured learning and opportunities to share current research.
+      The <strong>workshop</strong> (June 26–27) brings together the learning theory community for scientific exchange and discussion through invited talks, contributed talks, and posters. Summer school participants are very welcome to join the workshop to interact with leading researchers and hear about cutting-edge research in learning theory.
     </p>
   </div>
 </section>

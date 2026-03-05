@@ -22,11 +22,6 @@ permalink: /organizers/
           {% if o.affiliation %}
             <div class="person-meta">{{ o.affiliation }}</div>
           {% endif %}
-          {% if o.photo_credit and o.photo_source %}
-            <div class="person-credit tiny muted">
-              Photo: <a href="{{ o.photo_source }}" target="_blank" rel="noopener noreferrer">{{ o.photo_credit }}</a>
-            </div>
-          {% endif %}
         </div>
       </div>
     {% endfor %}

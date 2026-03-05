@@ -181,6 +181,10 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 1px; text-underl
   text-decoration: none;
   font-weight: 600;
 }
+.btn-schedule{
+  min-width: 206px;
+  white-space: nowrap;
+}
 .btn:hover{ text-decoration: none; border-color: color-mix(in srgb, var(--line) 60%, var(--fg)); }
 .btn.primary{
   border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
