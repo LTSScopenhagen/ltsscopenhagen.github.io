@@ -234,7 +234,7 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 1px; text-underl
 }
 .speaker-line-title{
   margin: 2px 0 0 0;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.2px;
   text-transform: uppercase;
@@ -468,6 +468,19 @@ a.person-card:hover{
   margin-top: 2px;
 }
 .person-credit{ margin-top: 6px; }
+
+.organizers-box{
+  margin-top: 12px;
+}
+.organizers-box .people-grid{
+  margin-top: 0;
+}
+.organizers-box .person-card{
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  padding: 6px;
+}
 
 .subtabs{
   display: inline-flex;
