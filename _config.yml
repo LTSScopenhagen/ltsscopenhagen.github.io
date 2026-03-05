@@ -10,6 +10,7 @@ plugins:
 # For GitHub Pages project sites, set this (example: "/ltss"):
 baseurl: ""
 url: ""
+# Deployment trigger marker.
 
 defaults:
   - scope:
@@ -22,4 +23,3 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-
