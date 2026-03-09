@@ -70,6 +70,9 @@ map_enabled: true
               </div>
             {% endif %}
             <p class="speaker-tile-name">{{ s.name }}</p>
+            {% if s.affiliation %}
+              <p class="speaker-tile-affiliation">{{ s.affiliation }}</p>
+            {% endif %}
           </div>
         {% endfor %}
       </div>
@@ -91,6 +94,9 @@ map_enabled: true
               </div>
             {% endif %}
             <p class="speaker-tile-name">{{ s.name }}</p>
+            {% if s.affiliation %}
+              <p class="speaker-tile-affiliation">{{ s.affiliation }}</p>
+            {% endif %}
           </div>
         {% endfor %}
       </div>

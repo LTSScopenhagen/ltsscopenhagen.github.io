@@ -291,6 +291,13 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 1px; text-underl
   line-height: 1.3;
   text-align: center;
 }
+.speaker-tile-affiliation{
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.35;
+  color: var(--muted);
+  text-align: center;
+}
 
 .location-layout{
   display: grid;
