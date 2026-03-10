@@ -86,10 +86,11 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 1px; text-underl
 }
 .brand:hover{ text-decoration: none; }
 .brand-mark{
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  width: 34px;
+  height: 20px;
+  display: block;
+  flex: 0 0 auto;
+  opacity: 0.9;
 }
 .brand-text{ white-space: nowrap; }
 
