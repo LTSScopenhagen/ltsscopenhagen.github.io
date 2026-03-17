@@ -5,7 +5,7 @@ map_enabled: true
 
 <div
   class="hero"
-  data-hero-images="{{ '/assets/img/copenhagen/cph-01.jpg' | relative_url }}, {{ '/assets/img/copenhagen/cph-02.jpg' | relative_url }}, {{ '/assets/img/copenhagen/cph-03.jpg' | relative_url }}, {{ '/assets/img/copenhagen/cph-04.jpg' | relative_url }}, {{ '/assets/img/copenhagen/cph-05.jpg' | relative_url }}"
+  data-hero-images="{{ '/assets/img/copenhagen/cph-01.jpg' | relative_url }}, {{ '/assets/img/copenhagen/cph-02.jpg' | relative_url }}, {{ '/assets/img/copenhagen/cph-03.jpg' | relative_url }}, {{ '/assets/img/copenhagen/cph-04.jpg' | relative_url }}"
 >
   <div class="hero-grid">
     <div class="hero-copy">
