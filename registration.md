@@ -3,19 +3,18 @@ title: "Registration"
 permalink: /registration/
 ---
 
-<section>
-  <h1>Registration</h1>
-  <div class="card">
-    <p class="muted">Registration: <strong>{{ site.data.event.registration_url }}</strong></p>
-    <ul class="muted">
-      <li>Fee: TBA</li>
-      <li>Poster: TBA</li>
-    </ul>
-  </div>
-
-  <!-- <div class="card" style="margin-top: 12px;">
-    <p class="muted">
-      For registration questions, contact: <strong>{{ site.data.event.contact_email }}</strong>
+<div class="academic-page academic-page-compact">
+  <section>
+    <p class="academic-kicker">University of Copenhagen</p>
+    <h1>Registration</h1>
+    <p class="lead">
+      Registration for the Learning Theory Summer School and Workshop is handled through the University of Copenhagen event signup page.
     </p>
-  </div> -->
-</section>
+    <p class="academic-links">
+      <a href="{{ site.data.event.registration_url }}" target="_blank" rel="noopener noreferrer">Open the registration form</a>
+    </p>
+    <p class="academic-note">
+      This page is intentionally minimal and points directly to the external registration portal.
+    </p>
+  </section>
+</div>

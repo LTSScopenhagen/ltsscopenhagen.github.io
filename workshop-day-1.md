@@ -7,7 +7,7 @@ map_enabled: true
 <section>
   <h1>Workshop — Day 1</h1>
   <p class="muted">
-    <!-- Invited talks are 45 min (incl. Q&amp;A). Contributed talks are 30 min (incl. Q&amp;A). -->
+    Invited talks are 45 min (incl. Q&amp;A). Contributed talks are 30 min (incl. Q&amp;A).
   </p>
 
   {% include workshop-tabs.html active="day1" %}

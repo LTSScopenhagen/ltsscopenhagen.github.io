@@ -33,9 +33,14 @@ map_enabled: true
   </div>
 </div>
 
+<div class="home-pill-row" aria-label="Key links">
+  <a class="home-pill-link is-cfp" href="{{ '/call-for-papers/' | relative_url }}">Call for papers</a>
+  <a class="home-pill-link is-registration" href="{{ site.data.event.registration_url }}" target="_blank" rel="noopener noreferrer">Registration</a>
+</div>
+
 <section>
   <h2>About</h2>
-  <div class="card">
+  <div class="about-copy">
     <p class="muted">
       The <strong>summer school</strong> (June 22–25) is aimed at PhD students, masters students, early-career researchers, and industry professionals, who want to acquire a strong foundation in modern learning theory and responsible machine learning. Over four days, participants will study core themes, such as generalization, optimization for ML, online and reinforcement learning, and responsible ML topics including privacy and robustness.
     </p>
@@ -49,7 +54,7 @@ map_enabled: true
   <h2>Invited Speakers</h2>
   {% assign summer_invited = site.data.summer_school_speakers %}
   {% assign workshop_invited = site.data.workshop_speakers %}
-  <div class="card speaker-card">
+  <div class="speaker-card">
     <p class="muted">
       More speakers will be announced soon.
     </p>
@@ -106,7 +111,7 @@ map_enabled: true
 
 <section>
   <h2>Organizers</h2>
-  <div class="card organizers-box">
+  <div class="organizers-box">
     <div class="people-grid">
       {% for o in site.data.organizers %}
         <div class="person-card">
@@ -132,7 +137,7 @@ map_enabled: true
 <section>
   <h2>Location</h2>
   <div class="location-layout">
-    <div class="card">
+    <div class="location-map-shell">
       <div
         id="venue-map"
         class="venue-map"
@@ -146,28 +151,24 @@ map_enabled: true
         data-workshop-lng="{{ site.data.event.workshop.venue_lng }}"
       ></div>
     </div>
-    <div class="location-details">
-      <div class="card">
-        <p class="muted">
-        </p>
-        <div class="location-list">
-          <div class="location-item">
-            <p class="location-label"><span class="location-dot is-summer"></span>Summer School</p>
-            <p class="location-name">{{ site.data.event.summer_school.venue_name }}</p>
-            <p class="location-meta">{{ site.data.event.summer_school.venue_address }}</p>
-            <p class="location-meta">{{ site.data.event.summer_school.venue_room }}</p>
-          </div>
-          <div class="location-item">
-            <p class="location-label"><span class="location-dot is-workshop"></span>Workshop</p>
-            <p class="location-name">{{ site.data.event.workshop.venue_name }}</p>
-            <p class="location-meta">{{ site.data.event.workshop.venue_address }}</p>
-            <p class="location-meta">{{ site.data.event.workshop.venue_room }}</p>
-          </div>
+    <div class="location-details location-panel">
+      <div class="location-list">
+        <div class="location-item">
+          <p class="location-label"><span class="location-dot is-summer"></span>Summer School</p>
+          <p class="location-name">{{ site.data.event.summer_school.venue_name }}</p>
+          <p class="location-meta">{{ site.data.event.summer_school.venue_address }}</p>
+          <p class="location-meta">{{ site.data.event.summer_school.venue_room }}</p>
         </div>
-        <p class="tiny muted">
-          Map data: OpenStreetMap contributors.
-        </p>
+        <div class="location-item">
+          <p class="location-label"><span class="location-dot is-workshop"></span>Workshop</p>
+          <p class="location-name">{{ site.data.event.workshop.venue_name }}</p>
+          <p class="location-meta">{{ site.data.event.workshop.venue_address }}</p>
+          <p class="location-meta">{{ site.data.event.workshop.venue_room }}</p>
+        </div>
       </div>
+      <p class="tiny muted location-map-note">
+        Map data: OpenStreetMap contributors.
+      </p>
     </div>
   </div>
 </section>

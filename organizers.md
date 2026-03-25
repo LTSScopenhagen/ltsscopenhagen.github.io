@@ -9,7 +9,7 @@ permalink: /organizers/
     For questions, see the Registration page.
   </p>
 
-  <div class="card organizers-box">
+  <div class="organizers-box">
     <div class="people-grid">
       {% for o in site.data.organizers %}
         <div class="person-card">
