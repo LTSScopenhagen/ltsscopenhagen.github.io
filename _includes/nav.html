@@ -1,11 +1,18 @@
 <div class="container nav-row">
   <a class="brand" href="{{ '/' | relative_url }}">
-    <img class="brand-mark" src="{{ '/assets/img/copenhagen-mark.svg' | relative_url }}" alt="" aria-hidden="true" />
+    <picture class="brand-mark-wrap" aria-hidden="true">
+      <source srcset="{{ '/assets/img/copenhagen-mark-dark.svg' | relative_url }}" media="(prefers-color-scheme: dark)" />
+      <img class="brand-mark" src="{{ '/assets/img/copenhagen-mark.svg' | relative_url }}" alt="" />
+    </picture>
     <span class="brand-text">{{ site.data.event.short_title }}</span>
   </a>
   <nav class="nav" aria-label="Primary">
     {% for item in site.data.nav %}
-      <a class="nav-link" href="{{ item.href | relative_url }}">{{ item.label }}</a>
+      {% if item.external %}
+        <a class="nav-link" href="{{ item.href }}" target="_blank" rel="noopener noreferrer">{{ item.label }}</a>
+      {% else %}
+        <a class="nav-link" href="{{ item.href | relative_url }}">{{ item.label }}</a>
+      {% endif %}
     {% endfor %}
   </nav>
 </div>

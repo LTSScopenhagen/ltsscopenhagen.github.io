@@ -1,14 +1,14 @@
 ---
-title: "Call for Abstracts"
+title: "Call for Contributions"
 permalink: /call-for-papers/
 ---
 
 <div class="academic-page">
   <section>
     <p class="academic-kicker">LTW 2026</p>
-    <h1>Call for Abstracts</h1>
+    <h1>Call for Contributions</h1>
     <p class="lead">
-      Learning Theory Workshop, University of Copenhagen, Copenhagen, Denmark, June 26-27, 2026.
+      <a href="{{ '/workshop/' | relative_url }}">Learning Theory Workshop</a>, University of Copenhagen, Copenhagen, Denmark, June 26-27, 2026.
     </p>
     <dl class="academic-meta">
       <div>
@@ -29,12 +29,14 @@ permalink: /call-for-papers/
       </div>
     </dl>
     <p>
-      We invite submissions to the Learning Theory Workshop, to be held in Copenhagen on June 26-27, 2026, following the Learning Theory Summer School.
+      We invite submissions to the <a href="{{ '/workshop/' | relative_url }}">Learning Theory Workshop</a>, to be held in Copenhagen on June 26-27, 2026.
     </p>
     <p>
-      The workshop aims to bring together researchers working on the theoretical foundations of machine learning, fostering discussion across a broad range of topics at the interface of learning theory, optimization, and modern ML applications. The workshop is preceded by the Learning Theory Summer School (June 22-25, 2026), which provides a great opportunity to learn about recent advancements at the core of modern machine learning practices. If you plan to attend the workshop, you also might be interested in attending the summer school.
+      The workshop aims to bring together researchers working on the theoretical foundations of machine learning, fostering discussion across a broad range of topics at the interface of learning theory, optimization, and modern ML applications.
     </p>
-    <p class="academic-note">Submission link (coming soon)</p>
+    <p>
+      The workshop is preceded by the Learning Theory Summer School (June 22-25, 2026), which provides a great opportunity to learn about recent advancements at the core of modern machine learning practices. Summer School participants are welcome to register for the workshop.
+    </p>
   </section>
 
   <section>
@@ -59,7 +61,7 @@ permalink: /call-for-papers/
     <p>
       The workshop is intended to encourage interaction and exchange of ideas across different areas of learning theory and related fields. The workshop will have no proceedings.
     </p>
-    <p>The workshop invites two modes of presentation:</p>
+    <p>The workshop offers two modes of presentation (the number of contributed talk slots is limited):</p>
     <ul>
       <li>Short talk (tentatively 15-20 minutes) and optional poster</li>
       <li>Poster only</li>
