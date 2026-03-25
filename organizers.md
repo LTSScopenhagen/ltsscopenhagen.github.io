@@ -5,10 +5,6 @@ permalink: /organizers/
 
 <section>
   <h1>Organizers</h1>
-  <p class="muted">
-    For questions, see the Registration page.
-  </p>
-
   <div class="organizers-box">
     <div class="people-grid">
       {% for o in site.data.organizers %}

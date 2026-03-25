@@ -1,12 +1,12 @@
 ---
-title: "Call for Papers"
+title: "Call for Abstracts"
 permalink: /call-for-papers/
 ---
 
 <div class="academic-page">
   <section>
     <p class="academic-kicker">LTW 2026</p>
-    <h1>Call for Papers</h1>
+    <h1>Call for Abstracts</h1>
     <p class="lead">
       Learning Theory Workshop, University of Copenhagen, Copenhagen, Denmark, June 26-27, 2026.
     </p>

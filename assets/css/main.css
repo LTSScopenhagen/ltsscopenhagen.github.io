@@ -97,13 +97,14 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 1px; text-underl
 .nav{
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
   justify-content: flex-end;
 }
 .nav-link{
-  padding: 6px 10px;
+  padding: 5px 9px;
   border-radius: 999px;
   border: 1px solid transparent;
+  font-size: 15px;
 }
 .nav-link:hover{
   text-decoration: none;
@@ -225,6 +226,10 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 1px; text-underl
   border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 18%, var(--surface)), color-mix(in srgb, var(--accent-2) 14%, var(--surface)));
 }
+.btn.workshop-btn{
+  border-color: color-mix(in srgb, var(--accent-2) 46%, var(--line));
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-2) 18%, var(--surface)), color-mix(in srgb, #9fd1ee 28%, var(--surface)));
+}
 
 .hero-media{
   position: relative;
@@ -279,6 +284,12 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 1px; text-underl
   letter-spacing: 0.2px;
   text-transform: uppercase;
   color: var(--muted);
+}
+.speaker-line-title.is-summer{
+  color: color-mix(in srgb, var(--accent) 82%, var(--fg));
+}
+.speaker-line-title.is-workshop{
+  color: color-mix(in srgb, var(--accent-2) 82%, var(--fg));
 }
 .speaker-carousel-list{
   display: grid;

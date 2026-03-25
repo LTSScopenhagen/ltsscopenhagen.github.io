@@ -23,7 +23,7 @@ map_enabled: true
       </div>
       <div class="actions">
         <a class="btn primary btn-schedule" href="{{ '/summer-school/' | relative_url }}">Summer school schedule</a>
-        <a class="btn" href="{{ '/workshop/day-1/' | relative_url }}">Workshop schedule</a>
+        <a class="btn workshop-btn" href="{{ '/workshop/day-1/' | relative_url }}">Workshop schedule</a>
       </div>
     </div>
     <div class="hero-media" aria-hidden="true">
@@ -34,7 +34,7 @@ map_enabled: true
 </div>
 
 <div class="home-pill-row" aria-label="Key links">
-  <a class="home-pill-link is-cfp" href="{{ '/call-for-papers/' | relative_url }}">Call for papers</a>
+  <a class="home-pill-link is-cfp" href="{{ '/call-for-papers/' | relative_url }}">Call for abstracts</a>
   <a class="home-pill-link is-registration" href="{{ site.data.event.registration_url }}" target="_blank" rel="noopener noreferrer">Registration</a>
 </div>
 
@@ -59,7 +59,7 @@ map_enabled: true
       More speakers will be announced soon.
     </p>
     <div class="speaker-line">
-      <p class="speaker-line-title">Summer School</p>
+      <p class="speaker-line-title is-summer">Summer School</p>
       <div class="speaker-carousel-list" aria-label="Summer school invited speakers">
         {% for s in summer_invited %}
           <div class="speaker-tile">
@@ -83,7 +83,7 @@ map_enabled: true
       </div>
     </div>
     <div class="speaker-line">
-      <p class="speaker-line-title">Workshop</p>
+      <p class="speaker-line-title is-workshop">Workshop</p>
       <div class="speaker-carousel-list" aria-label="Workshop invited speakers">
         {% for s in workshop_invited %}
           <div class="speaker-tile">

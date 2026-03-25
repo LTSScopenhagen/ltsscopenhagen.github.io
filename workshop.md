@@ -7,8 +7,8 @@ map_enabled: true
 <section>
   <h1>Workshop schedule</h1>
   <p class="muted">
-    Two-day research workshop with <strong>8 invited talks</strong> (45 min incl. Q&amp;A) and
-    <strong>8 contributed talks</strong> (30 min incl. Q&amp;A), two coffee breaks per day, and one lunch.
+    Two-day research workshop with <strong>9 invited talks</strong> (45 min incl. Q&amp;A) and
+    <strong>12 contributed talks</strong> (20 min incl. Q&amp;A), two coffee breaks per day, and one lunch.
     Day 1 includes a late invited talk followed by a combined poster session and social event.
   </p>
   <p class="muted">

@@ -7,7 +7,7 @@ map_enabled: true
 <section>
   <h1>Workshop — Day 2</h1>
   <p class="muted">
-    Invited talks are 45 min (incl. Q&amp;A). Contributed talks are 30 min (incl. Q&amp;A).
+    Venue: <strong>{{ site.data.event.workshop.venue_name }}</strong>, {{ site.data.event.workshop.venue_room }}, {{ site.data.event.workshop.venue_address }}.
   </p>
 
   {% include workshop-tabs.html active="day2" %}
