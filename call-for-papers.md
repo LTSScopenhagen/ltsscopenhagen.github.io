@@ -13,7 +13,7 @@ permalink: /call-for-papers/
     <dl class="academic-meta">
       <div>
         <dt>Submission link</dt>
-        <dd>Coming soon</dd>
+        <dd><a href="https://openreview.net/group?id=LTW/2026/Workshop#tab-your-consoles" target="_blank" rel="noopener noreferrer">OpenReview</a></dd>
       </div>
       <div>
         <dt>Submission deadline</dt>
