@@ -154,7 +154,7 @@ days:
         title: "Coffee break"
       - time: "15:30–16:15"
         speaker: "Francesco Orabona"
-        talk_title: "TBD"
+        talk_title: "State-of-the-Art Confidence Intervals and Confidence Sequences through Testing-by-Betting Algorithms"
       - time: "16:15–16:30"
         speaker: "Julian Zimmert"
         talk_title: "Bandits in the wild: What are the tradeoffs of robustness?"
