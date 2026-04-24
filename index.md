@@ -55,9 +55,6 @@ map_enabled: true
   {% assign summer_invited = site.data.summer_school_speakers %}
   {% assign workshop_invited = site.data.workshop_speakers %}
   <div class="speaker-card">
-    <p class="muted">
-      More speakers will be announced soon.
-    </p>
     <div class="speaker-line">
       <p class="speaker-line-title is-summer">Summer School</p>
       <div class="speaker-carousel-list" aria-label="Summer school invited speakers">
