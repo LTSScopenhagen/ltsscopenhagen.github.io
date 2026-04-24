@@ -11,6 +11,6 @@
     items.forEach((item) => listEl.appendChild(item));
   };
 
-  const lists = document.querySelectorAll(".speaker-carousel-list");
+  const lists = document.querySelectorAll(".speaker-carousel-list, .people-grid");
   lists.forEach(randomizeList);
 })();
