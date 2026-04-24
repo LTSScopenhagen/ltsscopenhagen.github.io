@@ -26,7 +26,14 @@ map_enabled: true
         {% for item in day.items %}
           <tr>
             <td class="time">{{ item.time }}</td>
-            <td>{{ item.title }}</td>
+            <td>
+              {% if item.speaker %}
+                <strong>{{ item.speaker }}</strong><br>
+                <em>Title: {{ item.talk_title }}</em>
+              {% else %}
+                {{ item.title }}
+              {% endif %}
+            </td>
           </tr>
         {% endfor %}
       </tbody>

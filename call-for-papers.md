@@ -25,7 +25,7 @@ permalink: /call-for-papers/
       </div>
       <div>
         <dt>Registration deadline</dt>
-        <dd>May 24, 2026</dd>
+        <dd>25 May 2026 at 12:00</dd>
       </div>
     </dl>
     <p>
@@ -67,7 +67,7 @@ permalink: /call-for-papers/
       <li>Poster only</li>
     </ul>
     <p class="academic-note">
-      If your abstract is accepted, one of the co-authors must present the contribution in person and register for the workshop by May 24, 2026.
+      If your abstract is accepted, one of the co-authors must present the contribution in person and register for the workshop by 25 May 2026 at 12:00.
     </p>
   </section>
 

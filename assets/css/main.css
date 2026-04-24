@@ -553,6 +553,17 @@ section p{ margin: 0 0 10px 0; }
   border-left: 2px solid color-mix(in srgb, var(--accent) 36%, var(--line));
   color: var(--muted);
 }
+.deadline-callout{
+  margin: 2px 0 12px 0;
+  color: #b42318;
+  font-weight: 750;
+  letter-spacing: 0.01em;
+}
+@media (prefers-color-scheme: dark){
+  .deadline-callout{
+    color: #ffb4ab;
+  }
+}
 @media (max-width: 680px){
   .academic-meta div{
     grid-template-columns: 1fr;

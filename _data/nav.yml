@@ -5,7 +5,6 @@
 - label: "Call for Contributions"
   href: "/call-for-papers/"
 - label: "Registration"
-  href: "https://eventsignup.ku.dk/learningtheorysummerschoolandworkshop"
-  external: true
+  href: "/registration/"
 - label: "Organizers"
   href: "/organizers/"
