@@ -1,0 +1,9 @@
+- name: "DDSA"
+  url: "https://ddsa.dk/"
+  logo: "/assets/img/sponsors/ddsa.png"
+  alt: "DDSA logo"
+
+- name: "Pioneer Centre for AI"
+  url: "https://www.aicentre.dk/"
+  logo: "/assets/img/sponsors/pioneer-centre-ai.svg"
+  alt: "Pioneer Centre for AI logo"

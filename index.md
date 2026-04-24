@@ -169,3 +169,20 @@ map_enabled: true
     </div>
   </div>
 </section>
+
+<section>
+  <h2>Sponsors</h2>
+  <div class="sponsor-grid">
+    {% for sponsor in site.data.sponsors %}
+      <a
+        class="sponsor-card"
+        href="{{ sponsor.url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit {{ sponsor.name }}"
+      >
+        <img class="sponsor-logo" src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}" loading="lazy" />
+      </a>
+    {% endfor %}
+  </div>
+</section>
