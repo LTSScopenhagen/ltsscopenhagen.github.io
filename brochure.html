@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>LTSS Copenhagen 2026 A4 Brochure</title>
+    <style>
+      :root {
+        --ink: #101513;
+        --muted: #52605b;
+        --panel: rgba(255, 255, 255, 0.93);
+        --green: #0b5d4a;
+        --blue: #0a2a4a;
+        --soft-green: #d9eee8;
+        --soft-blue: #dce8f7;
+      }
+
+      * { box-sizing: border-box; }
+
+      html,
+      body {
+        margin: 0;
+        background: #e8ece9;
+        color: var(--ink);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding: 18px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      .sheet {
+        position: relative;
+        width: 210mm;
+        height: 297mm;
+        max-width: calc(100vw - 36px);
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 13% 9%, rgba(11, 93, 74, 0.16), transparent 27%),
+          radial-gradient(circle at 92% 12%, rgba(10, 42, 74, 0.16), transparent 30%),
+          linear-gradient(180deg, #ffffff 0%, #fbfbf8 50%, #f4f7f4 100%);
+        box-shadow: 0 10mm 35mm rgba(17, 24, 22, 0.16);
+      }
+
+      .sheet::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(115deg, rgba(255,255,255,0.94) 0%, rgba(255,255,255,0.87) 42%, rgba(255,255,255,0.58) 100%),
+          url("assets/img/copenhagen/cph-03.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.23;
+      }
+
+      .page {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        padding: 10.5mm 12mm 8.8mm;
+        display: grid;
+        grid-template-rows: auto auto auto auto auto auto 1fr;
+        gap: 3.7mm;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 3mm;
+        min-width: 0;
+        font-size: 10pt;
+        font-weight: 850;
+        letter-spacing: 0.01em;
+      }
+
+      .brand img {
+        width: 16mm;
+        height: auto;
+        display: block;
+        flex: 0 0 auto;
+      }
+
+      .brand-text {
+        display: grid;
+        gap: 0.2mm;
+      }
+
+      .brand-title { white-space: nowrap; }
+
+      .brand-subtitle {
+        color: var(--muted);
+        font-size: 7.7pt;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .masthead {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 75mm;
+        gap: 4.5mm;
+        align-items: start;
+      }
+
+      .cta {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 28mm;
+        gap: 3mm;
+        align-items: center;
+        justify-self: end;
+        align-self: start;
+        width: 75mm;
+        color: var(--blue);
+        transform: translateY(-2.2mm);
+      }
+
+      .cta h2 {
+        margin: 0;
+        color: var(--green);
+        font-size: 11.2pt;
+        line-height: 1.04;
+        letter-spacing: -0.018em;
+      }
+
+      .cta h2 span {
+        display: block;
+        white-space: nowrap;
+      }
+
+      .qr {
+        width: 28mm;
+        height: 28mm;
+        display: block;
+        padding: 1.3mm;
+        border: 0.3mm solid rgba(10, 42, 74, 0.12);
+        border-radius: 2.2mm;
+        background: #fff;
+        box-shadow: 0 2mm 7mm rgba(25, 38, 33, 0.08);
+      }
+
+      h1 {
+        margin: 0;
+        color: var(--ink);
+        font-size: 24.6pt;
+        line-height: 0.98;
+        letter-spacing: -0.06em;
+      }
+
+      .title-accent {
+        display: block;
+        color: var(--green);
+        white-space: nowrap;
+      }
+
+      .subtitle {
+        margin: 2.2mm 0 0;
+        color: var(--muted);
+        font-size: 11.7pt;
+        line-height: 1.15;
+        font-weight: 850;
+        white-space: nowrap;
+      }
+
+      .panel {
+        min-width: 0;
+        border: 0.3mm solid rgba(16, 21, 19, 0.08);
+        border-radius: 5.2mm;
+        background: var(--panel);
+        box-shadow: 0 4mm 12mm rgba(25, 38, 33, 0.06);
+      }
+
+      .section { padding: 4.2mm 4mm; }
+
+      h2 {
+        margin: 0 0 2.4mm;
+        color: var(--blue);
+        font-size: 11.2pt;
+        line-height: 1.05;
+        letter-spacing: -0.015em;
+      }
+
+      p {
+        margin: 0;
+        font-size: 8.4pt;
+        line-height: 1.28;
+      }
+
+      .event-card {
+        display: grid;
+        grid-template-columns: 44mm minmax(0, 1fr);
+        gap: 4mm;
+        align-items: center;
+        min-width: 0;
+        padding: 4.4mm;
+        border-radius: 4.2mm;
+        background: linear-gradient(135deg, rgba(217, 238, 232, 0.92), rgba(255,255,255,0.86));
+      }
+
+      .event-card.workshop {
+        grid-template-columns: 44mm minmax(0, 1fr) 25mm;
+        align-items: center;
+        background: linear-gradient(135deg, rgba(220, 232, 247, 0.95), rgba(255,255,255,0.84));
+      }
+
+      .track-title {
+        margin: 0 0 1mm;
+        color: var(--green);
+        font-size: 12.1pt;
+        font-weight: 900;
+        letter-spacing: -0.02em;
+      }
+
+      .event-card.workshop .track-title { color: var(--blue); }
+
+      .event-card.workshop .bullets li {
+        font-size: 9.4pt;
+        font-weight: 780;
+        line-height: 1.12;
+      }
+
+      .track-date {
+        margin: 0;
+        color: var(--ink);
+        font-size: 10.3pt;
+        font-weight: 850;
+      }
+
+      .bullets {
+        margin: 0;
+        padding-left: 4mm;
+      }
+
+      .bullets li {
+        margin: 0 0 0.9mm;
+        font-size: 9.4pt;
+        line-height: 1.12;
+        font-weight: 780;
+      }
+
+      .topics {
+        margin-top: 2.4mm;
+      }
+
+      .topics-title {
+        margin: 0 0 1.3mm;
+        color: var(--green);
+        font-size: 7.4pt;
+        line-height: 1;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .topic-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.3mm;
+      }
+
+      .topic-chip {
+        display: inline-block;
+        padding: 0.95mm 1.6mm;
+        border-radius: 999px;
+        background: rgba(255,255,255,0.74);
+        color: #1d2a26;
+        font-size: 7.55pt;
+        line-height: 1;
+        font-weight: 760;
+      }
+
+      .submit-callout {
+        display: inline-block;
+        margin-top: 2.3mm;
+        padding: 1.9mm 2.8mm;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #f3e6b8, #ebcda8);
+        color: #402b00;
+        font-size: 12.2pt;
+        line-height: 1;
+        font-weight: 950;
+      }
+
+      .openreview-qr {
+        width: 24mm;
+        height: 24mm;
+        justify-self: end;
+        display: block;
+        padding: 1mm;
+        border-radius: 2mm;
+        background: #fff;
+        box-shadow: 0 1.5mm 5mm rgba(10, 42, 74, 0.10);
+      }
+
+      .speaker-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 2.7mm;
+      }
+
+      .speaker {
+        min-width: 0;
+        display: grid;
+        grid-template-columns: 12mm minmax(0, 1fr);
+        gap: 1.9mm;
+        align-items: center;
+        padding: 1.7mm;
+        border-radius: 999px;
+        background: #f0f5f2;
+      }
+
+      .speaker.school { background: var(--soft-green); }
+      .speaker.workshop { background: var(--soft-blue); }
+
+      .speaker img {
+        width: 12mm;
+        height: 12mm;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        background: #fff;
+      }
+
+      .speaker span {
+        min-width: 0;
+        color: #202825;
+        font-size: 7.05pt;
+        font-weight: 800;
+        line-height: 1.05;
+      }
+
+      .footer {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 4mm;
+        align-items: center;
+        align-self: end;
+      }
+
+      .sponsors {
+        display: flex;
+        align-items: center;
+        gap: 4mm;
+        min-width: 0;
+      }
+
+      .sponsor-label {
+        color: var(--muted);
+        font-size: 8.8pt;
+        font-weight: 850;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      .sponsors img {
+        max-width: 30mm;
+        max-height: 10.5mm;
+        object-fit: contain;
+        filter: saturate(0.9);
+      }
+
+      .footer-note {
+        color: var(--muted);
+        font-size: 7.7pt;
+        font-weight: 650;
+        text-align: right;
+      }
+
+      .organizers {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1.4mm;
+      }
+
+      .organizer-label {
+        margin-right: 0.6mm;
+        color: var(--muted);
+        font-size: 7.7pt;
+        font-weight: 850;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .organizer {
+        display: grid;
+        justify-items: center;
+        gap: 0.65mm;
+        width: 13.8mm;
+      }
+
+      .organizer img {
+        width: 12.6mm;
+        height: 12.6mm;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .organizer span {
+        color: var(--muted);
+        font-size: 5.25pt;
+        font-weight: 800;
+        line-height: 0.94;
+        text-align: center;
+      }
+
+      @media print {
+        html,
+        body {
+          width: 210mm;
+          height: 297mm;
+          min-height: 0;
+          display: block;
+          padding: 0;
+          background: transparent;
+        }
+
+        .sheet {
+          width: 210mm;
+          height: 297mm;
+          max-width: none;
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="sheet" aria-label="LTSS Copenhagen 2026 A4 brochure">
+      <div class="page">
+        <header class="topbar">
+          <div class="brand">
+            <img src="assets/img/copenhagen-mark.svg" alt="" />
+            <div class="brand-text">
+              <span class="brand-title">LTSS Copenhagen 2026</span>
+              <span class="brand-subtitle">University of Copenhagen</span>
+            </div>
+          </div>
+        </header>
+
+        <section class="masthead">
+          <div class="hero">
+            <h1>
+              Learning Theory
+              <span class="title-accent">Summer School &amp; Workshop</span>
+            </h1>
+            <p class="subtitle">June 22–27, 2026 · Copenhagen, Denmark</p>
+          </div>
+          <div class="cta">
+            <div>
+              <h2><span>Register by</span><span>May 25, 2026</span></h2>
+            </div>
+            <img class="qr" src="assets/img/ltss-website-qr.png" alt="QR code for the LTSS Copenhagen website" />
+          </div>
+        </section>
+
+        <section class="panel section">
+          <article class="event-card">
+            <div>
+              <h2 class="track-title">Summer School</h2>
+              <p class="track-date">June 22–25, 2026</p>
+            </div>
+            <div>
+              <ul class="bullets">
+                <li>Four days of lectures and discussion sessions.</li>
+                <li>For PhD, master's students, early-career researchers, and industry professionals.</li>
+              </ul>
+              <div class="topics">
+                <p class="topics-title">Topics</p>
+                <div class="topic-chips">
+                  <span class="topic-chip">Online Learning</span>
+                  <span class="topic-chip">Reinforcement Learning</span>
+                  <span class="topic-chip">Privacy</span>
+                  <span class="topic-chip">Unlearning</span>
+                  <span class="topic-chip">Robustness</span>
+                  <span class="topic-chip">Multicalibration</span>
+                  <span class="topic-chip">Memorisation</span>
+                  <span class="topic-chip">Learning Theory</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="panel section">
+          <h2>Summer School Lecturers</h2>
+          <div class="speaker-grid">
+            <div class="speaker school"><img src="assets/img/speakers/francesco-orabona.jpg" alt="" /><span>Francesco Orabona</span></div>
+            <div class="speaker school"><img src="assets/img/speakers/aurelien-bellet.jpg" alt="" /><span>Aurelien Bellet</span></div>
+            <div class="speaker school"><img src="assets/img/speakers/varun-kanade.png" alt="" /><span>Varun Kanade</span></div>
+            <div class="speaker school"><img src="assets/img/speakers/vitaly-feldman.jpg" alt="" /><span>Vitaly Feldman</span></div>
+            <div class="speaker school"><img src="assets/img/organizers/amartya-sanyal.jpg" alt="" /><span>Amartya Sanyal</span></div>
+            <div class="speaker school"><img src="assets/img/organizers/yevgeny-seldin.jpg" alt="" /><span>Yevgeny Seldin</span></div>
+            <div class="speaker school"><img src="assets/img/organizers/nirupam-gupta.jpg" alt="" /><span>Nirupam Gupta</span></div>
+            <div class="speaker school"><img src="assets/img/organizers/sadegh-talebi.jpg" alt="" /><span>Sadegh Talebi</span></div>
+            <div class="speaker school"><img src="assets/img/speakers/patrick-rebeschini.jpg" alt="" /><span>Patrick Rebeschini</span></div>
+          </div>
+        </section>
+
+        <section class="panel section">
+          <article class="event-card workshop">
+            <div>
+              <h2 class="track-title">Workshop</h2>
+              <p class="track-date">June 26–27, 2026</p>
+            </div>
+            <div>
+              <ul class="bullets">
+                <li>10 invited talks and 12 contributed talks.</li>
+              </ul>
+              <div class="submit-callout">Submit your works by May 10</div>
+            </div>
+            <img class="openreview-qr" src="assets/img/openreview-qr.png" alt="QR code for the workshop OpenReview submissions page" />
+          </article>
+        </section>
+
+        <section class="panel section">
+          <h2>Workshop Invited Speakers</h2>
+          <div class="speaker-grid">
+            <div class="speaker workshop"><img src="assets/img/speakers/vitaly-feldman.jpg" alt="" /><span>Vitaly Feldman</span></div>
+            <div class="speaker workshop"><img src="assets/img/speakers/patrick-rebeschini.jpg" alt="" /><span>Patrick Rebeschini</span></div>
+            <div class="speaker workshop"><img src="assets/img/speakers/francesco-orabona.jpg" alt="" /><span>Francesco Orabona</span></div>
+            <div class="speaker workshop"><img src="assets/img/speakers/alex-slivkins.jpg" alt="" /><span>Alex Slivkins</span></div>
+            <div class="speaker workshop"><img src="assets/img/speakers/amir-yehudayoff.jpg" alt="" /><span>Amir Yehudayoff</span></div>
+            <div class="speaker workshop"><img src="assets/img/speakers/maryam-kamgarpour.jpg" alt="" /><span>Maryam Kamgarpour</span></div>
+            <div class="speaker workshop"><img src="assets/img/speakers/corinna-cortes.png" alt="" /><span>Corinna Cortes</span></div>
+            <div class="speaker workshop"><img src="assets/img/speakers/mehryar-mohri.jpg" alt="" /><span>Mehryar Mohri</span></div>
+            <div class="speaker workshop"><img src="assets/img/speakers/marco-mondelli.jpg" alt="" /><span>Marco Mondelli</span></div>
+            <div class="speaker workshop"><img src="assets/img/speakers/julian-zimmert.png" alt="" /><span>Julian Zimmert</span></div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="sponsors">
+            <span class="sponsor-label">Sponsors</span>
+            <img src="assets/img/sponsors/ddsa.png" alt="DDSA logo" />
+            <img src="assets/img/sponsors/pioneer-centre-ai.svg" alt="Pioneer Centre for AI logo" />
+          </div>
+          <div class="organizers" aria-label="Organizers">
+            <span class="organizer-label">Organizers</span>
+            <div class="organizer"><img src="assets/img/organizers/amartya-sanyal.jpg" alt="" /><span>Amartya<br />Sanyal</span></div>
+            <div class="organizer"><img src="assets/img/organizers/yevgeny-seldin.jpg" alt="" /><span>Yevgeny<br />Seldin</span></div>
+            <div class="organizer"><img src="assets/img/organizers/nirupam-gupta.jpg" alt="" /><span>Nirupam<br />Gupta</span></div>
+            <div class="organizer"><img src="assets/img/organizers/sadegh-talebi.jpg" alt="" /><span>Sadegh<br />Talebi</span></div>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
