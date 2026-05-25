@@ -34,7 +34,7 @@ map_enabled: true
 </div>
 
 <div class="home-pill-row" aria-label="Key links">
-  <a class="home-pill-link is-cfp" href="{{ '/call-for-papers/' | relative_url }}">Call for contributions</a>
+  <a class="home-pill-link is-cfp" href="{{ '/workshop/accepted-contributions/' | relative_url }}">Accepted contributions</a>
   <a class="home-pill-link is-registration" href="{{ '/registration/' | relative_url }}">Registration</a>
 </div>
 

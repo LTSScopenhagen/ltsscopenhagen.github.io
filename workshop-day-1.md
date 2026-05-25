@@ -9,6 +9,10 @@ map_enabled: true
   <p class="muted">
     Venue: <strong>{{ site.data.event.workshop.venue_name }}</strong>, {{ site.data.event.workshop.venue_room }}, {{ site.data.event.workshop.venue_address }}.
   </p>
+  <p class="schedule-note">
+    Accepted contributions are now available:
+    <a href="{{ '/workshop/accepted-contributions/' | relative_url }}">view the full list</a>.
+  </p>
 
   {% include workshop-tabs.html active="day1" %}
 

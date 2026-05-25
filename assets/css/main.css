@@ -483,6 +483,98 @@ a:hover{ text-decoration: underline; text-decoration-thickness: 1px; text-underl
   border-top-color: color-mix(in srgb, var(--fg) 90%, var(--bg));
 }
 
+.schedule-note{
+  margin: 16px 0 22px 0;
+  padding: 14px 0 14px 18px;
+  border-left: 4px solid color-mix(in srgb, var(--accent-2) 82%, var(--line));
+  border-top: 1px solid color-mix(in srgb, var(--accent-2) 18%, var(--line));
+  border-bottom: 1px solid color-mix(in srgb, var(--accent-2) 18%, var(--line));
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.34;
+  color: color-mix(in srgb, var(--fg) 92%, var(--accent-2));
+}
+.schedule-note a{
+  color: color-mix(in srgb, var(--accent-2) 96%, var(--fg));
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.section-heading-row{
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.section-heading-row h2{
+  margin-bottom: 4px;
+}
+.section-heading-row p{
+  margin-bottom: 0;
+}
+.section-count{
+  flex: 0 0 auto;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 650;
+}
+.contribution-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+.contribution-item{
+  padding: 9px 0 10px;
+  border-bottom: 1px solid var(--line);
+}
+.contribution-item h3{
+  margin: 0;
+  font-size: 15.75px;
+  line-height: 1.32;
+  font-weight: 450;
+  letter-spacing: 0;
+  color: color-mix(in srgb, var(--fg) 92%, var(--accent-2));
+}
+.contribution-authors,
+.contribution-venue{
+  margin: 3px 0 0 0;
+  color: var(--muted);
+}
+.contribution-authors{
+  font-size: 13.5px;
+  line-height: 1.36;
+}
+.contribution-venue{
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 4px;
+  padding-left: 6px;
+  border-left: 2px solid color-mix(in srgb, #b85f14 58%, var(--line));
+  color: color-mix(in srgb, #8c430a 76%, var(--muted));
+  font-size: 12.75px;
+  font-style: normal;
+  font-weight: 610;
+  line-height: 1.3;
+}
+@media (prefers-color-scheme: dark){
+  .contribution-venue{
+    border-left-color: color-mix(in srgb, #f0a14d 54%, var(--line));
+    color: color-mix(in srgb, #ffc47e 78%, var(--muted));
+  }
+}
+@media (max-width: 640px){
+  .section-heading-row{
+    display: block;
+  }
+  .section-count{
+    margin-top: 4px;
+  }
+}
+
 section{
   padding-top: 26px;
   padding-bottom: 16px;

@@ -1,0 +1,22 @@
+<section id="accepted-contributions">
+  <div class="section-heading-row">
+    <div>
+      <h2>Accepted Contributions</h2>
+      <p class="muted">
+        Accepted submissions selected for contributed talks and posters.
+      </p>
+    </div>
+    <p class="section-count">{{ site.data.accepted_contributions | size }} contributions</p>
+  </div>
+  <div class="contribution-list" data-shuffle-contributions aria-label="Accepted workshop contributions">
+    {% for contribution in site.data.accepted_contributions %}
+      <article class="contribution-item">
+        <h3>{{ contribution.title }}</h3>
+        <p class="contribution-authors">{{ contribution.authors }}</p>
+        {% if contribution.venue %}
+          <p class="contribution-venue">{{ contribution.venue }}</p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>

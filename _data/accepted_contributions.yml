@@ -1,0 +1,200 @@
+- number: 42
+  title: "Regret-Optimal Wasserstein-Robust Regression"
+  authors: "Sloan Nietert, Daniel Kuhn"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 41
+  title: "Cost-Aware Learning"
+  authors: "Clara Mohri, Amir Globerson, Haim Kaplan, Tomer Koren, Yishay Mansour"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 40
+  title: "Multi-hypothesis learning to deal with conflicts"
+  authors: "Tamara Drucks, Patrick Indri, Sebastian Heil"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 39
+  title: "The binned k secretary problem"
+  authors: "Laura Skovbæk, Yevgeny Seldin"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 38
+  title: "Paired Counterfactual Auditing of Clinical Bias Propagation in Federated Pediatric Regression"
+  authors: "Tirathraj Ramburn"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 37
+  title: "Theoretical Behaviour of AI Agent Reasoning: From Generalisability to Rationality"
+  authors: "Fengxiang He"
+  venue: "ICML 2026"
+  status: "Accept (Oral)"
+- number: 36
+  title: "GOGH: Correlation-Guided Orchestration of GPUs in Heterogeneous Clusters"
+  authors: "Ahmad raeisi, M. Sadegh Talebi, Mahdi Dolati, Sina Darabi, Patrick Eugster, Ahmad Khonsari"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 35
+  title: "Green Scheduling of AI-training"
+  authors: "Mathias Gilje, Laura Skovbæk, Yevgeny Seldin"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 34
+  title: "Regret in Probabilistic Reward Machines"
+  authors: "Hippolyte Bourel, Chenxiao Ma, Anders Jonsson, Odalric-Ambrym Maillard, M. Sadegh Talebi"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 33
+  title: "A Single Stepsize for Robust and Fast Unprojected TD(0)"
+  authors: "Wei-Cheng Lee, Francesco Orabona"
+  venue: "COLT 2026"
+  status: "Accept (Oral)"
+- number: 32
+  title: "Teaching Partial Concept Classes"
+  authors: "Rex Lei, Shay Moran, Hans U. Simon, Maximilian Thiessen, Sandra Zilles"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 31
+  title: "PALM – A Predictive Model for Evaluating Sample Efficiency in Active Learning Models"
+  authors: "Julia Machnio, Mads Nielsen, Mostafa Mehdipour Ghazi"
+  venue: "ICCV 2025"
+  status: "Accept (Oral)"
+- number: 29
+  title: "The interplay of data structure and imbalance in the learning dynamics of diffusion models"
+  authors: "Flavio Nicoletti, Chenxiao Ma, Enrico Ventura, Luca Saglietti, Stefano Sarao Mannelli"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 28
+  title: "LoRA and Privacy: When Random Projections Help (and When They Don’t)"
+  authors: "Yaxi Hu, Johanna Düngler, Bernhard Schölkopf, Amartya Sanyal"
+  venue: "TPDP 2026"
+  status: "Accept (Poster)"
+- number: 27
+  title: "Less Noise, Same Certificate: Retain Sensitivity for Unlearning"
+  authors: "Carolin Heinzler, Kasra Malihi, Amartya Sanyal"
+  venue: "TPDP 2026"
+  status: "Accept (Oral)"
+- number: 26
+  title: "Language Generation with Replay: A Learning-Theoretic View of Model Collapse"
+  authors: "Giorgio Racca, Michal Valko, Amartya Sanyal"
+  venue: "ICML 2026"
+  status: "Accept (Oral)"
+- number: 25
+  title: "Why Forget only Unlearning needs Memorization"
+  authors: "Luka Radić, Vikrant Singhal, Amartya Sanyal"
+  venue: ""
+  status: "Accept (Oral)"
+- number: 24
+  title: "Morphological Ambiguity and Sample Complexity in Arabic Hallucination Detection"
+  authors: "Nsrin Ashraf"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 23
+  title: "Analysis and Empirical Evaluation of δ-Regularized Gradient Clipping"
+  authors: "Katsiaryna Novikava, Anna Lytova, Omar Rivasplata"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 22
+  title: "Residual Privacy Budgeting with Weighted Scarcity Allocation for Online Query Answering"
+  authors: "Mina Khoshmehr, Fernando Beltran"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 21
+  title: "Community Recovery from Non-Binary Interactions: Information Limit, Optimal Algorithm, Preprocessing"
+  authors: "Maximilien Dreveton"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 20
+  title: "PAC-Bayesian Structural Risk Minimization"
+  authors: "Aleksandr Karakulev, Prashant Singh"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 19
+  title: "r-Adjacency Differential Privacy: Convex Learning, Gaussian Release, and Reconstruction Robustness"
+  authors: "Joseph Margaryan, Nirupam Gupta"
+  venue: ""
+  status: "Accept (Oral)"
+- number: 18
+  title: "Concurrent Composition for Differentially Private Continual Mechanisms"
+  authors: "Monika Henzinger, Roodabeh Safavi, Salil Vadhan"
+  venue: "PODS 2026"
+  status: "Accept (Oral)"
+- number: 17
+  title: "CP-POL + PPI: Conformal Guarantees in Partially-Observed Label Space"
+  authors: "Christian NGNIE"
+  venue: "TMLR"
+  status: "Accept (Oral)"
+- number: 15
+  title: "How Private Is Each Token? Auditing Differential Privacy in Autoregressive Text Generation"
+  authors: "Dhruv Shah, Vishnu Vinod, Krishna Pillutla"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 14
+  title: "On the Sample Complexity of Discounted Reinforcement Learning with Optimized Certainty Equivalents"
+  authors: "Oliver Mortensen, M. Sadegh Talebi"
+  venue: "RLC 2026"
+  status: "Accept (Oral)"
+- number: 13
+  title: "(Semi-)Adversarial Causal Bandits with Known Causal Mechanism and Causal Self-Bounding"
+  authors: "Hubert Marek Drazkowski, Yevgeny Seldin"
+  venue: ""
+  status: "Accept (Oral)"
+- number: 12
+  title: "Disagreement-Regularized Importance Sampling for Adversarial Label Corruption"
+  authors: "Csongor Horváth, Prashant Singh, Ida-Maria Sintorn"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 11
+  title: "Improved Accuracy for Private Continual Cardinality Estimation in Fully Dynamic Streams"
+  authors: "Joel Daniel Andersson, Palak Jain, Satchit Sivakumar"
+  venue: "PODS 2026"
+  status: "Accept (Oral)"
+- number: 10
+  title: "Near-Optimal Generalized Private Testing"
+  authors: "Anamay Chaturvedi, Monika Henzinger, Jalaj Upadhyay"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 9
+  title: "When and Why is Optimistic Multiplicative Weights Slow? The Geometry of Energy Dissipation"
+  authors: "John Lazarsfeld"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 8
+  title: "Towards PAC-Bayesian Guarantees for Self-Certified Fair Classification"
+  authors: "Julien Bastian, Benjamin Leblanc, Pascal Germain, Amaury Habrard, Christine Largeron, Guillaume Metzler, Emilie Morvant, Paul Viallard"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 7
+  title: "Learning Nash equilibria using Minorization-Majorization"
+  authors: "Ashok Krishnan K.S., Helene Le Cadre, Ana Busic"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 6
+  title: "Uncertainty Quantification for Calibrated Point Predictions"
+  authors: "Georgios Gavrilopoulos, Johanna Ziegel"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 5
+  title: "The Query Complexity of Local Search in Rounds on General Graphs"
+  authors: "Simina Branzei, Ioannis Panageas, Dimitris Paparas"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 4
+  title: "Adaptive Symmetrization of the KL Divergence"
+  authors: "Omri Ben-Dov, Luiz F. O. Chamon"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 3
+  title: "A Reduction from Delayed to Immediate Feedback for Online Convex Optimization with Improved Rates"
+  authors: "Alexander Ryabchenko, Idan Attias, Daniel M. Roy"
+  venue: ""
+  status: "Accept (Poster)"
+- number: 2
+  title: "Optimizing Dimensionality Reduction in SDN: A Metaheuristic Approach of UMAP Parameter Tuning"
+  authors: "Abderrahmane JOUILILI"
+  venue: "CIEES 2024"
+  status: "Accept (Poster)"
+- number: 1
+  title: "Inceptive RAG: A Rigorous Gradient-Based Attribution Metric for Programmatic Data Monetization"
+  authors: "Doohee You"
+  venue: ""
+  status: "Accept (Poster)"
