@@ -7,7 +7,7 @@ permalink: /registration/
   <section>
     <p class="academic-kicker">LTSS Copenhagen 2026</p>
     <h1>Registration</h1>
-    <p class="deadline-callout">Registration deadline: 25 May 2026 at 23:59</p>
+    <p class="deadline-callout">Registration deadline: 26 May 2026 at 09:00</p>
     <p>You can register for one or both of the following options:</p>
     <ul>
       <li>Summer School (June 22-25): DKK 1,000</li>
