@@ -70,7 +70,7 @@ days:
         title: "Coffee break"
       - time: "15:50–17:20"
         speaker: "Patrick Rebeschini"
-        talk_title: "Aggregation and Universal Learning"
+        talk_title: "Optimal Hedging 1: Statistical Aggregation and Universal Learning"
 
   - date: "2026-06-25"
     label: "Thu, Jun 25"
@@ -83,7 +83,7 @@ days:
         title: "Coffee break"
       - time: "11:20–12:50"
         speaker: "Patrick Rebeschini"
-        talk_title: "Prediction with Surrogate Covariates"
+        talk_title: "Optimal Hedging 2: Anytime-Valid Statistical Testing"
       - time: "12:50–14:00"
         title: "Lunch"
       - time: "14:00–15:30"
