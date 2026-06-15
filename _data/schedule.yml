@@ -3,6 +3,8 @@ days:
     label: "Mon, Jun 22"
     track: "Summer School — Day 1"
     items:
+      - time: "08:30–09:00"
+        title: "Registration & morning coffee break"
       - time: "09:00–09:20"
         title: "Welcome & logistics"
       - time: "09:20–10:50"
@@ -28,6 +30,8 @@ days:
     label: "Tue, Jun 23"
     track: "Summer School — Day 2"
     items:
+      - time: "09:00–09:30"
+        title: "Morning coffee break"
       - time: "09:30–11:00"
         speaker: "Sadegh Talebi"
         talk_title: "Introduction to Online RL 2; Introduction to Private RL"
@@ -53,6 +57,8 @@ days:
     label: "Wed, Jun 24"
     track: "Summer School — Day 3"
     items:
+      - time: "09:00–09:30"
+        title: "Morning coffee break"
       - time: "09:30–11:00"
         speaker: "Varun Kanade"
         talk_title: "Agnostic Learning, Multicalibration, Omniprediction II"
@@ -76,6 +82,8 @@ days:
     label: "Thu, Jun 25"
     track: "Summer School — Day 4"
     items:
+      - time: "09:00–09:30"
+        title: "Morning coffee break"
       - time: "09:30–11:00"
         speaker: "Francesco Orabona"
         talk_title: "Applications of Online Convex Optimization"
@@ -94,11 +102,17 @@ days:
       - time: "15:50–17:20"
         speaker: "Vitaly Feldman"
         talk_title: "The role of memorization in learning: from data properties to data processing"
+      - time: "17:20–17:30"
+        title: "Closing remarks for the summer school"
 
   - date: "2026-06-26"
     label: "Fri, Jun 26"
     track: "Workshop — Day 1"
     items:
+      - time: "08:20–08:50"
+        title: "Morning coffee break"
+      - time: "08:50–09:00"
+        title: "Opening remarks for the workshop"
       - time: "09:00–09:45"
         speaker: "Corinna Cortes"
         talk_title: "A Modular Learning Framework and the Evolving Information Ecosystem"
@@ -133,6 +147,8 @@ days:
     label: "Sat, Jun 27"
     track: "Workshop — Day 2"
     items:
+      - time: "08:30–09:00"
+        title: "Morning coffee break"
       - time: "09:00–09:45"
         speaker: "Mehryar Mohri"
         talk_title: "Distributional Alignment Games for Answer-Level Fine-Tuning"
@@ -158,3 +174,5 @@ days:
       - time: "16:15–16:30"
         speaker: "Julian Zimmert"
         talk_title: "Bandits in the wild: What are the tradeoffs of robustness?"
+      - time: "16:30–16:40"
+        title: "Closing remarks for the workshop"
