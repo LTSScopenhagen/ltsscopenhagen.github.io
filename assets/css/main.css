@@ -848,6 +848,22 @@ a.person-card:hover{
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
+.contributed-talks{
+  margin: 8px 0 0;
+  padding-left: 22px;
+}
+.contributed-talks li{
+  margin: 6px 0;
+}
+.contributed-talks .talk-title{
+  display: block;
+  font-weight: 700;
+}
+.contributed-talks .talk-authors{
+  display: block;
+  color: var(--muted);
+  font-size: 14px;
+}
 
 .site-footer{
   border-top: 1px solid var(--line);

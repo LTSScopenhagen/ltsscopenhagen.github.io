@@ -1,11 +1,11 @@
 ---
-title: "Workshop — Day 1"
+title: "Workshop — Day 1 (Provisional)"
 permalink: /workshop/day-1/
 map_enabled: true
 ---
 
 <section>
-  <h1>Workshop — Day 1</h1>
+  <h1>Workshop — Day 1 (Provisional)</h1>
   <p class="muted">
     Venue: <strong>{{ site.data.event.workshop.venue_name }}</strong>, {{ site.data.event.workshop.venue_room }}, {{ site.data.event.workshop.venue_address }}.
   </p>
@@ -32,7 +32,17 @@ map_enabled: true
                 <strong>{{ item.speaker }}</strong><br>
                 <em>Title: {{ item.talk_title }}</em>
               {% else %}
-                {{ item.title }}
+                <strong>{{ item.title }}</strong>
+                {% if item.talks %}
+                  <ol class="contributed-talks">
+                    {% for talk in item.talks %}
+                      <li>
+                        <span class="talk-title">{{ talk.title }}</span>
+                        <span class="talk-authors">{{ talk.authors }}</span>
+                      </li>
+                    {% endfor %}
+                  </ol>
+                {% endif %}
               {% endif %}
             </td>
           </tr>

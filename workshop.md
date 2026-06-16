@@ -1,11 +1,11 @@
 ---
-title: "Workshop"
+title: "Workshop Schedule (Provisional)"
 permalink: /workshop/
 map_enabled: true
 ---
 
 <section>
-  <h1>Workshop schedule</h1>
+  <h1>Workshop schedule (Provisional)</h1>
   <p class="muted">
     Two-day research workshop with <strong>9 invited talks</strong> (45 min incl. Q&amp;A) and
     <strong>12 contributed talks</strong> (20 min incl. Q&amp;A), two coffee breaks per day, and one lunch.
@@ -37,7 +37,17 @@ map_enabled: true
                 <strong>{{ item.speaker }}</strong><br>
                 <em>Title: {{ item.talk_title }}</em>
               {% else %}
-                {{ item.title }}
+                <strong>{{ item.title }}</strong>
+                {% if item.talks %}
+                  <ol class="contributed-talks">
+                    {% for talk in item.talks %}
+                      <li>
+                        <span class="talk-title">{{ talk.title }}</span>
+                        <span class="talk-authors">{{ talk.authors }}</span>
+                      </li>
+                    {% endfor %}
+                  </ol>
+                {% endif %}
               {% endif %}
             </td>
           </tr>
