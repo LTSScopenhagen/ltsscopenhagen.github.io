@@ -1,3 +1,8 @@
+- number: 43
+  title: "Denoise First, Orthogonalize Later: Understanding Momentum in Muon via Spectral Filtering"
+  authors: "Xianliang Li, Zihan Zhang, Weiyang Liu, Han Bao"
+  venue: ""
+  status: "Accept (Poster)"
 - number: 42
   title: "Regret-Optimal Wasserstein-Robust Regression"
   authors: "Sloan Nietert, Daniel Kuhn"
