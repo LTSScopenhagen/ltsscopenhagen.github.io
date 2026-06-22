@@ -27,6 +27,9 @@ map_enabled: true
               {% if item.speaker %}
                 <strong>{{ item.speaker }}</strong><br>
                 <em>Title: {{ item.talk_title }}</em>
+                {% if item.lecture_notes_url %}
+                  <br><a href="{{ item.lecture_notes_url }}">Lecture notes</a>
+                {% endif %}
               {% else %}
                 {{ item.title }}
               {% endif %}
