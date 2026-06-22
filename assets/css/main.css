@@ -848,6 +848,33 @@ a.person-card:hover{
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
+.lecture-notes-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 7px;
+  padding: 4px 9px;
+  border: 1px solid color-mix(in srgb, var(--accent) 58%, var(--line));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+  color: color-mix(in srgb, var(--accent) 82%, var(--fg));
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+.lecture-notes-link::before{
+  content: "->";
+  font-size: 13px;
+  line-height: 1;
+}
+.lecture-notes-link:hover{
+  border-color: color-mix(in srgb, var(--accent) 82%, var(--line));
+  background: color-mix(in srgb, var(--accent) 16%, var(--surface));
+  text-decoration-thickness: 2px;
+}
 .contributed-talks{
   margin: 8px 0 0;
   padding-left: 22px;

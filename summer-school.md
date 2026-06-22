@@ -31,7 +31,7 @@ map_enabled: true
                 <strong>{{ item.speaker }}</strong><br>
                 <em>Title: {{ item.talk_title }}</em>
                 {% if item.lecture_notes_url %}
-                  <br><a href="{{ item.lecture_notes_url }}">Lecture notes</a>
+                  <br><a class="lecture-notes-link" href="{{ item.lecture_notes_url }}">Lecture notes</a>
                 {% endif %}
               {% else %}
                 {{ item.title }}
