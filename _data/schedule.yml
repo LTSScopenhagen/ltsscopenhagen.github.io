@@ -103,7 +103,7 @@ days:
       - time: "09:30–11:00"
         speaker: "Francesco Orabona"
         talk_title: "Applications of Online Convex Optimization"
-        lecture_notes_url: "/assets/oco.pdf"
+        lecture_notes_url: "/assets/oco2.pdf"
         lecture_notes_label: "Lecture slides"
       - time: "11:00–11:20"
         title: "Coffee break"
