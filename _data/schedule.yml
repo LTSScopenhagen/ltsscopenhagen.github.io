@@ -115,6 +115,8 @@ days:
       - time: "14:00–15:30"
         speaker: "Amartya Sanyal"
         talk_title: "Machine Unlearning"
+        lecture_notes_url: "/assets/amartya_unlearning.pdf"
+        lecture_notes_label: "Lecture slides"
       - time: "15:30–15:50"
         title: "Coffee break"
       - time: "15:50–17:20"
